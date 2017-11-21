@@ -1,0 +1,1375 @@
+$blue: 		#c4d6fc;
+$green: 	#8dc63f;
+$primary: 	#6f1111;
+
+// Team Colours
+$team-a:	rgba(111,17,17,1); 	// #6f1111
+$team-b:	rgba(70,70,70,1); 	// #464646
+
+// Progession colours
+$green:	#00a651;
+$red:	#ff0000;
+
+// Absolute Centre
+@mixin centre {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+// Section mixin
+@mixin section {
+	width: 400px;
+	margin: 10px;
+	height: 120px;
+	// background: $blue;
+	float: left;
+}
+
+// Section heights
+@mixin one {
+	height: 120px;
+}
+
+@mixin two {
+	height: 260px;
+}
+
+@mixin three {
+	height: 400px;
+}
+
+@mixin four {
+	height: 540px;
+}
+
+// Section widths
+@mixin thirds {
+	width: 260px;
+}
+
+@mixin half {
+	width: 400px;
+}
+
+@mixin full {
+	width: 820px;
+}
+
+// Section blocks
+@mixin section-one-thirds {
+	@include section;
+	@include one;
+	@include thirds;
+}
+
+@mixin section-one-half {
+	@include section;
+	@include one;
+	@include half;
+}
+
+@mixin section-one-full {
+	@include section;
+	@include one;
+	@include full;
+}
+
+@mixin section-two-full {
+	@include section;
+	@include two;
+	@include full;
+}
+
+@mixin section-three-full {
+	@include section;
+	@include three;
+	@include full;
+}
+
+@mixin section-three-half {
+	@include section;
+	@include three;
+	@include half;
+}
+
+@mixin section-four-full {
+	@include section;
+	@include four;
+	@include full;
+}
+
+@mixin section-two-half {
+	@include section;
+	@include two;
+	@include half;
+}
+
+@mixin section-four-half {
+	@include section;
+	@include four;
+	@include half;
+}
+
+// Tables: Text and Padding
+#modal {
+	width: 960px;
+	height: 640px;
+	background: #fff;
+	overflow: hidden; // Sneaky hackery
+}
+
+// Header
+header.header {
+	background: rgba(255,255,255, 0.5);
+	// font-family: 'MontserratSemiBold';
+	font-size: 14px;
+	height: 60px;
+	left: 100px;
+	line-height: normal;
+	position: absolute;
+	width: 860px;
+	z-index: 900;
+
+	.bib-logo {
+		width: 250px;
+		height: 40px;
+		float: left;
+		padding: 10px 20px;
+		background: url('../images/betitbest-stats.png') no-repeat center;
+	}
+
+	.fixture-details {
+		background: $grey-4;
+		color: #fff;
+		float: right;
+		// font-family: 'MontserratSemiBold';
+		height: 40px;
+		padding: 10px 20px;
+		width: 530px;
+
+		.tournament {
+			text-transform: uppercase;
+		}
+	}
+}	
+
+// Navigation
+.nav-tabs {
+	background: $dark-red-bg;
+	color: #fff;
+	// font-family: 'Montserrat';
+	font-size: 14px;
+	height: 640px;
+	position: absolute;
+	width: 100px;
+	z-index: 900;
+
+	.icon-stats {
+		padding: 20px 0;
+		text-align: center;
+		width: 100px;
+	}
+
+	ul {
+
+	}
+
+	li {
+		list-style: none;
+
+		&.active a {
+			background: $left-nav-hover-bg;
+		}
+
+		a {
+			color: #fff;
+			float: left;
+			padding: 20px 0;
+			text-align: center;
+			text-decoration: none;
+			width: 100px;
+
+			&:hover {
+				background: $left-nav-hover-bg;
+			}
+		}
+	}
+}
+
+#modal-stats {
+	position: relative;
+	width: 860px;
+
+	.page {
+		font-size: 14px;
+		padding: 70px 10px 10px;
+		width: 860px;
+		height: 640px !important;
+		margin-left: 100px;
+
+		h2 {
+			// font-family: 'MontserratSemiBold';
+			font-size: 14px;
+			font-weight: normal;
+			margin: 0 0 5px;
+			padding: 0;
+			text-transform: uppercase;
+		}
+
+		span.team-a {
+			color: $team-a;
+		}
+
+		span.team-b {
+			color: $team-b;
+		}
+
+		p {
+			margin-bottom: 20px;
+		}
+	}
+
+	#compare {
+
+		// COMPARE: Head-to-Head
+		.head-to-head {
+
+			&.left {
+				@include section-one-thirds;
+				display: table;
+
+				.team-badge {
+					float: left;
+					margin-top: 10px;
+					margin-right: 10px;
+				}
+			}
+
+			&.last-meetings {
+				@include section-one-thirds;
+				text-align: center;
+
+				.scoreboard-match {
+					clear: both;
+					color: #fff;
+					float: left;
+					font-size: 14px;
+					font-weight: 600;
+					margin-bottom: 2px;
+					width: 260px;
+
+					.match-bar-a {
+						float: left;
+						text-align: right;
+						width: 130px;
+
+						.match-bar-score {
+							float: right;
+							background: $team-a;	
+						}						
+					}
+
+					.match-bar-b {
+						float: left;						
+						text-align: left;
+						width: 130px;
+
+						.match-bar-score {
+							float: left;
+							background: $team-b;	
+						}
+					}
+
+					.match-bar-score {
+						padding: 2px 0;
+						width: 100%;
+					}
+				}
+			}
+
+			&.right {
+				@include section-one-thirds;
+				display: table;
+
+				.team {
+				}
+
+				.team-badge {
+					float: right;
+					margin-top: 10px;
+					margin-left: 10px;
+				}
+			}
+
+			.team {
+				display: table-cell;
+				width: 150px;
+	    		vertical-align: middle;
+			}
+
+			.team-badge {
+				float: left;
+				height: 100px;
+				width: 100px;
+				// border-radius: 150px;
+				// background: $blue;
+			}
+
+			.team-name {
+				font-size: 24px;
+				font-weight: 600;
+				text-transform: uppercase;
+				margin-bottom: 2px;
+				word-break: break-all;
+			}
+
+			.team-coach {
+				font-size: 12px;
+				margin-top: 5px;
+			}
+		}
+
+		.absent-players {
+			@include section-one-half;
+		}
+
+		.last-5-matches {
+			@include section-one-half;
+
+			.formcheck {
+				width: 398px;
+			}
+
+			.formcheck-table {
+				border: none;
+
+				canvas {
+					bottom: 0;
+				    height: 100%;
+				    position: absolute;
+				    right: 0;
+				    left: auto;
+				    top: 0;
+				    width: 257px;
+				    z-index: 2;
+				}
+			}
+
+			.formcheck-row {
+				background: #fff;
+				height: 33px;
+
+				> .label {
+					background: $almost-white;
+					font-size: 12px;
+					font-weight: 600;
+					text-align: center;
+					text-transform: uppercase;
+					width: 140px;
+				}
+
+				> div {
+					padding: 10px;
+					width: auto;
+
+					span {
+						height: 28px;
+						top: 6%;
+						width: 28px;
+					}
+				}
+
+				&.loss {
+					border-bottom: 1px solid #e3e3e3;
+				}
+			}
+		}
+
+		.last-5-matches-details {
+			@include section-one-half;
+			position: relative;
+
+			.hide {
+				display: none;
+			}
+
+			.controls {
+				color: $grey-4;
+				cursor: pointer;
+				font-size: 12px;
+				font-weight: 600;
+				position: absolute;
+				right: 5px;
+				top: 5px;
+
+				.last-5,
+				.next-5 {
+					color: $grey-3;
+
+					&:hover {
+						color: $grey-4;
+					}
+
+					&.active {
+						color: $grey-4;
+					}
+				}
+			}
+		}
+
+		// No missing player data
+		&.no-missing {
+
+			.absent-players {
+				display: none;
+			}
+
+			.last-5-matches-details {
+				@include section-two-half;
+
+				table {
+					height: 242px;
+
+					thead th {
+						height: 12px;
+						// background: blue;
+					}
+				}
+			}
+		}
+	}
+
+	#league {
+
+		// HISTORY: Over/Under
+		.over-under {
+			@include section;
+
+			.header {
+				width: 390px;
+				background: $table-border-grey;
+				padding: 5px;
+				float: left;
+
+				.title {
+					float: left;
+				}
+
+				h2 {
+					margin: 4px 5px;
+				}
+
+				#sover_under_statistic {
+					display: none;
+				}
+
+				.state {
+					float: right;					
+				}
+
+				.btn {
+					background: #fff;
+					cursor: pointer;
+					float: left;
+					font-weight: 600;
+					margin-left: 5px;
+					padding: 4px 10px;
+					transition: background ease-in 0.2s, 
+								color ease-in 0.2s;
+
+					&:hover {
+						background: $grey-4;
+						color: #fff;
+
+					}
+
+					&.active {
+						background: $dark-red-bg;
+						color: #fff;
+					}
+				}
+			}
+
+			.body {
+				border: 1px solid $table-border-grey;
+				height: 89px;
+				width: 398px;
+				float: left;
+
+				.chart {
+					float: left;
+					width: 50%;
+				}
+
+				.pie {
+					float: left;
+					margin: 10px;
+				}
+
+				.chart-key {
+					float: left;
+					height: 87px;
+					position: relative;
+					width: 50%;
+
+					.team-name {
+						float: left;
+						font-size: 16px;
+						font-weight: 600;
+						margin-top: 10px;
+						overflow: hidden;
+						text-transform: uppercase;
+					    text-overflow: ellipsis;
+					    text-transform: uppercase;
+					    width: 105px;
+					}
+
+					.legend {
+						position: absolute;
+						bottom: 5px;
+						height: 30px;
+						font-size: 10px;
+
+						.row {
+							float: left;
+							margin: 1px 0;	
+							width: 100%;
+						}
+
+						.box {
+							// width: 10px;
+							// height: 10px;
+							margin-right: 5px;
+							float: left;
+							padding: 2px 4px;
+							border-radius: 500px;
+							font-weight: 600;
+
+							&.over {
+								background: $team-a;
+								color: #fff;
+							}
+
+							&.under {
+								background: #e3e3e3;
+							}
+
+							&.team-b {
+								background: $team-b;
+							}
+						}
+
+						.desc {
+							float: left;
+						}
+					}
+				}
+			}
+
+			.footer {
+				border: none;
+			    font-size: 9px;
+			    font-style: italic;
+			    padding: 2px 0 0;
+			    text-align: right;
+			}
+		}
+
+		// HISTORY: League Table
+		.league-table {
+			@include section;
+
+			table {
+				td {
+					white-space: nowrap;
+					
+				    &.team {
+				    	overflow: hidden;
+					    text-overflow: ellipsis;
+					    max-width: 1px;    
+					    width: 100%;
+				    }
+				}
+			}
+		}
+
+		// League Table
+		.league-table-full {
+			@include section-three-full;
+			
+			.tbl-league {
+				float: left;
+				word-break: break-word;
+
+				.team-a {
+					background: rgba(111,17,17,1);
+					color: #fff;
+
+					td {
+						// border-right-color: #333;
+					}
+				}
+
+				.team-b {
+					background: rgba(70,70,70,1);
+					color: #fff;
+
+					td {
+						// border-right-color: #333;
+					}
+				}
+			}
+
+			.fa-chevron-circle-up {
+				color: $green;
+			}
+
+			.fa-chevron-circle-right {
+				color: $grey-4;
+			}
+
+			.fa-chevron-circle-down {
+				color: $red;	
+			}
+
+		}
+
+		// League Progression
+		.league-progression {
+			@include section-three-full;
+			// height: 190px;
+
+			/*
+			.formcheck-row {
+				background: #fff;
+				height: 16px;
+				margin-left: 19px;
+				width: 799px;
+				border-top: none;
+
+				> div  {
+					padding: 0;
+				}
+
+				&:first-child {
+					border-top: 1px solid $table-border-grey;
+				}
+
+				&:last-child {
+					// border-bottom: 1px solid $table-border-grey;
+				}
+
+				&.data-value-y {
+					-webkit-backface-visibility: hidden;
+					background: $grey-4;
+					border: none;
+					color: #fff;
+					font-size: 11px;
+					height: auto;
+					margin: 0;
+					padding: 4px 0;
+					text-align: center;
+					text-transform: uppercase;
+					transform-origin: left 0;
+					transform: rotate(-90deg);
+					width: 102px;
+					font-weight: 600;
+				}
+
+				&.data-value-x {
+					background: $grey-4;
+					border: none;
+					color: #fff;
+					font-size: 11px;
+					height: auto;
+					margin: 0;
+					padding: 5px 0;
+					text-align: center;
+					text-transform: uppercase;
+					width: 820px;
+					font-weight: 600;
+				}
+
+				.team-a {
+					width: 10px;
+					height: 10px;
+					border-radius: 50px;
+					margin: 0 auto;
+					background: $team-a;
+				}
+
+				.team-b {
+					width: 10px;
+					height: 10px;
+					border-radius: 50px;
+					margin: 0 auto;
+					background: $team-b;
+				}
+			}
+			*/
+		}
+	}
+
+	#history {
+
+		// HISTORY: Matches
+		.matches {
+			@include section;
+
+			.header {
+				width: 400px;
+
+				.elem {
+					background: $grey-4;
+					color: #fff;
+					float: left;
+					// font-family: "MontserratSemiBold";
+					font-size: 12px;
+					height: 24px;
+					line-height: 24px;
+					padding: 4px;
+					text-align: center;
+					text-transform: uppercase;
+					width: 125px;
+					text-overflow: ellipsis;
+					overflow: hidden;
+
+					span {
+						display: inline-block;
+						vertical-align: middle;
+						line-height: normal;
+					}
+				}
+			}
+
+			.body {
+				border: 1px solid $table-border-grey;
+				height: 121px;
+				width: 398px;
+
+				.elem {
+					float: left;
+					font-size: 18px;
+					font-weight: 600;
+					height: 81px;
+					line-height: 93px;
+					padding: 5px;
+					position: relative;
+					text-align: center;
+					width: 122px;
+				}
+			}
+
+			.bubble {
+				@include centre;
+				border-radius: 50px;
+				color: #fff;
+
+				&.zero {
+					background: $almost-white;
+					height: 20px;
+					line-height: 20px;
+					width: 20px;
+				}
+				
+				&.small {
+					background: $team-a;
+					height: 40px;
+					line-height: 40px;
+					width: 40px;
+				}
+
+				&.med {
+					background: $grey-4;
+					height: 50px;
+					line-height: 50px;
+					width: 50px;
+				}
+
+				&.large {
+					background: $team-b;
+					height: 75px;
+					line-height: 75px;						
+					width: 75px;
+				}
+
+				&.draws {
+					background: $grey-4;
+				}
+			}
+		}
+
+		// HISTORY: Previous 5 Matches
+		.prev-matches {
+			@include section;
+		}
+
+		// HISTORY: Match History
+		.match-history {
+
+			&.team-a {
+				@include section-three-half;
+			}
+
+			&.team-b {
+				@include section-three-half;
+			}
+		}
+
+	}
+
+	#tables {
+
+		// League Table
+		.league-table {
+			@include section-four-full;
+			// height: 330px;
+
+			.tbl-league {
+				float: left;
+				word-break: break-word;
+
+				.team-a {
+					background: rgba(111,17,17,1);
+					color: #fff;
+
+					td {
+						// border-right-color: #333;
+					}
+				}
+
+				.team-b {
+					background: rgba(70,70,70,1);
+					color: #fff;
+
+					td {
+						// border-right-color: #333;
+					}
+				}
+			}
+
+			.fa-chevron-circle-up {
+				color: $green;
+			}
+
+			.fa-chevron-circle-right {
+				color: $grey-4;
+			}
+
+			.fa-chevron-circle-down {
+				color: $red;	
+			}
+
+		}
+	}
+
+	#players {
+
+		.absent-players {
+			@include section-one-half;
+		}
+
+		.squad {
+
+			h2 {
+				float: left;
+				margin: 8px 0;
+				font-size: 21px;
+			}
+
+			&.team-a {
+				@include section-three-half;
+				height: 540px;
+			}
+
+			&.team-b {
+				@include section-three-half;
+				height: 540px;
+			}
+		}
+	}
+
+	.dataTables_filter {
+		// display: none;
+	}
+
+	// DATATABLES
+	table {
+		width: 100%;
+		// font-family: 'Montserrat';
+		font-size: 12px;
+		text-align: center;
+		// height: 75px;
+
+		strong {
+			// font-family: 'MontserratSemiBold' !important;
+			font-weight: normal;
+			text-transform: uppercase;
+		}
+
+		caption {
+			font-size: 14px;
+			padding: 5px 0;
+			// font-family: 'MontserratSemiBold';
+			color: $primary;
+		}
+
+		thead {
+			background: $grey-4;
+			color: #fff;
+			font-size: 12px;
+			text-transform: uppercase;
+
+			th {
+				padding: 4px;
+				// font-family: 'MontserratSemiBold';
+				border-right: 1px solid $table-border-grey;
+
+				&:last-child {
+					border: none;
+				}
+			}
+
+			.sub-header {
+				background: $grey-5;
+				color: #fff;
+				font-weight: normal;
+				font-size: 12px;
+
+				th {
+					font-size: 11px;
+					border: none;
+
+					&:nth-child(8),
+					&:nth-child(16) {
+						border-right: 1px solid $table-border-grey;
+					}
+				}
+			}
+		}
+
+		tbody {
+			background: #fff;
+			border-collapse: collapse;
+
+			tr {
+				border-bottom: 1px solid $table-border-grey;
+
+				&:last-child {
+					border: none;
+				}
+
+				&:nth-child(even) {
+					background: $almost-white;
+				}
+
+				&.missing {
+					background: $invalid-background-color;
+				}
+			}
+
+			td {
+				padding: 4px 8px;
+				border-right: 1px solid $table-border-grey;
+
+				&:last-child {
+					border: none;
+				}
+			}
+		}
+
+		th,
+		td {
+			text-align: center;
+		}
+
+		&.tbl-match-details {
+			border: 1px solid $table-border-grey;
+
+			/*
+			th {
+				&:first-child,
+				&:nth-child(3) {
+					text-align: left;
+					padding: 2px 8px;
+				}			
+			}
+			*/
+
+			td {
+				padding: 2px 4px;
+
+				/*
+				&:first-child,
+				&:nth-child(3) {
+					text-align: left;
+					padding: 2px 8px;
+				}
+				*/
+			}
+
+			&.hide {
+				display: none;
+			}
+		}
+
+		&.tbl-league-standings {
+			border: 1px solid $table-border-grey;
+
+			td {
+				font-size: 14px;
+				padding: 13px 4px;
+			}
+		}
+	}
+
+	.table-filter {
+		float: right;
+		margin-bottom: 10px;
+		padding: 4px;
+		padding-left: 8px;
+		background: $almost-white;
+
+		label {
+			font-size: 11px;
+			// font-family: 'MontserratSemiBold';
+			text-transform: uppercase;
+		}
+	}
+
+	.tbl-scrollable {
+		overflow: hidden;
+	    position: relative;
+	}
+
+	.tbl-wrapper {
+		overflow: hidden;
+	    position: relative;
+
+	    table {
+	    	border: 1px solid $table-border-grey;
+	    }
+
+	    &.tbl-absent {
+	    	height: 99px;
+
+			td {
+				text-align: left;
+				padding: 6px 8px;
+			}
+	    }
+
+	    &.tbl-match-details {
+	    	height: 102px;
+	    }
+
+	    &.tbl-matches-prev {
+	    	height: 102px;
+	    	padding-right: 17px;
+	    }
+
+	    &.tbl-match-history {
+	    	height: 380px;
+	    	padding-right: 17px;
+	    	background: $almost-white;
+
+	    	/*
+	    	table {
+	    		height: 100%;
+	    	}
+	    	*/
+	    }
+
+	    &.tbl-league {
+	    	height: 380px;
+	    	padding-right: 17px;
+
+	    	th,
+	    	td {
+	    		padding: 4px 2px;
+	    	}
+
+	    	td:first-child {
+	    		border-right: none;
+	    	}
+
+	    	// Home
+	    	td:nth-child(12),
+	    	td:nth-child(13),
+	    	td:nth-child(14),
+	    	td:nth-child(15),
+	    	td:nth-child(16),
+	    	td:nth-child(17),
+	    	td:nth-child(18),
+	    	td:nth-child(19) {
+	    		// background: rgba(6,89,200,0.05);
+	    		// background: lighten(red, 10%);
+	    		background: rgba(0,0,0,0.15);
+	    	}
+
+	    	tr:nth-child(even) {
+
+		    	td:nth-child(12),
+		    	td:nth-child(13),
+		    	td:nth-child(14),
+		    	td:nth-child(15),
+		    	td:nth-child(16),
+		    	td:nth-child(17),
+		    	td:nth-child(18),
+		    	td:nth-child(19) {
+		    		background: rgba(0,0,0,0.25);
+		    	}
+		    }
+	    }
+
+	}
+
+	.tbl-player-squad {
+		height: 500px;
+    	width: 400px;
+    	padding-right: 17px;
+
+	   	table {
+    		border: 1px solid $table-border-grey;
+    		margin-bottom: 10px;
+
+    		td {
+    			max-width: 70px;
+			    overflow: hidden;
+			    text-overflow: ellipsis;
+			    white-space: nowrap;
+    		}
+
+    		// temp hide assists col
+    		td,
+    		th {
+    			&:nth-child(8) {
+    				display: none;
+    			}
+    		}
+    	}
+    }
+
+	// Hides the table header on the absent players table
+	.absent-players .floatThead-table[style] {
+		display: none !important;
+	}
+
+	// Perfect Scrollbar z-index hack
+	.ps-container {
+
+	}
+
+	.ps-container>.ps-scrollbar-y-rail {
+	    z-index: 1002;
+	    opacity: 0.2;
+
+	    &:hover {
+	    	opacity: 0.8;
+	    }
+	}
+
+	// Tooltip
+	.tooltip-parent {
+		position: relative;
+		cursor: pointer;
+	}
+
+	.tooltip-parent .tooltip {
+		background: $grey-4;
+		bottom: 0;
+	    color: #fff;
+	    font-size: 12px;
+	    font-weight: 600;
+	    height: 30px;
+	    left: -65px;
+	    line-height: 16px;
+	    min-width: 120px;
+	    padding: 10px;
+	    position: absolute;
+	    right: 0;
+	    text-align: center;
+	    top: -60px;
+	    opacity: 0;
+	    visibility: hidden;
+
+	    transition: opacity 0.2s ease-in,
+					visibility 0.2s ease-in,
+	        		top 0.2s ease-in;
+
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	  	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+	}
+
+	.tooltip-parent .tooltip:after {
+		content: '';
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		margin-left: -8px;
+		width: 0; height: 0;
+		border-top: 8px solid #222222;
+		border-right: 8px solid transparent;
+		border-left: 8px solid transparent;
+	}
+
+	.tooltip-parent:hover .tooltip {
+		visibility: visible;
+	 	opacity: 1;
+		z-index: 9999;
+		top: -57px !important;
+	}
+}
+
+.tab-nav {
+    height: 30px;
+    float: left;
+    clear: both;
+    margin: 10px 0; 
+}
+
+.tab-nav .tab-link {
+	float: left;
+	margin-right: 10px;
+	cursor: pointer;
+    padding: 10px;
+    text-transform: uppercase;
+    color: $grey-4;
+    text-decoration: none; 
+    background: $almost-white;
+    font-size: 11px;
+    // font-family: 'MontserratSemiBold';
+
+    &:hover {
+    	color: #fff;
+    	background: $grey-4;
+    }
+
+    &.current {
+		position: relative;
+		z-index: 5;
+		color: #fff;
+	    background: $grey-4;
+
+	    &:hover {
+	    	background: $grey-4;
+	    }
+	}
+}
+
+.tab {
+    float: left;
+}
+
+.tab-content{
+	display: none;
+
+	&.current{
+		display: table-row-group;
+	}
+}
+
+#chartjs-tooltip {
+    opacity: 1;
+    position: absolute;
+    background: rgba(0,0,0,0.75);
+    color: white;
+    font-size: 10px;
+   	// font-family: 'MontserratSemiBold';
+    padding: 5px;
+    border-radius: 3px;
+    -webkit-transition: opacity .1s ease;
+    transition: opacity .1s ease;
+    pointer-events: none;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    text-align: center;
+    z-index: 999;
+
+    &:before {
+        border: solid;
+        border-color: #111 transparent;
+        border-color: rgba(0,0,0,0.75) transparent;
+        border-width: 8px 8px 0 8px;
+        bottom: 1em;
+        content: "";
+        display: block;
+        left: 50%;
+        top: 100%;
+        position: absolute;
+        z-index: 99;
+        -webkit-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+    }
+}
+
+// OLD TABS
+.tabs-menu {
+    height: 30px;
+    float: left;
+    clear: both;
+    margin: 10px 0; 
+}
+
+.tabs-menu li {
+    height: 20px;
+    line-height: 20px;
+    float: left;
+    margin-right: 10px;
+    background: $almost-white;
+}
+
+.tabs-menu li.current {
+    position: relative;
+    z-index: 5;
+}
+
+.tabs-menu li a {
+    padding: 10px;
+    text-transform: uppercase;
+    color: $grey-4;
+    text-decoration: none; 
+    background: $almost-white;
+    font-size: 11px;
+    // font-family: 'MontserratSemiBold';
+}
+
+.tabs-menu .current a {
+    color: #fff;
+    background: $grey-4;
+
+    &:hover {
+    	background: $grey-4;
+    }
+}
+
+.tab {
+    float: left;
+}
+
+.tab-content {
+    @include half;
+    // display: none;
+
+    &.tab-hide {
+    	display: none !important;
+    }
+}
+
+
+#team-a-tab-1,
+#team-b-tab-1 {
+	display: table-row-group;   
+}
+
+#league-team-a {
+	display: table-row-group;  
+}
+
+#league-prog-team-a {
+	display: table-row-group;
+}

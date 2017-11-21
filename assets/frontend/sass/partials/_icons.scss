@@ -1,0 +1,46 @@
+// Icons
+
+@mixin ico-16 {
+	width: 16px;
+	height: 16px;
+	background: #c4d6fc;
+	margin: 0 auto;
+}
+
+.icon {
+
+	&-player-number {
+		@include ico-16;
+		background: url('../images/player_icons/icon_player-number.png');
+	}
+
+	&-red-card {
+		@include ico-16;
+		background: url('../images/player_icons/icon_red-card.png');
+	}
+
+	&-yellow-card {
+		@include ico-16;
+		background: url('../images/player_icons/icon_yellow-card.png');
+	}
+
+	&-banned {
+		@include ico-16;
+		background: url('../images/player_icons/icon_banned.png');
+	}
+
+	&-player-shots {
+		@include ico-16;
+		background: url('../images/player_icons/icon_player-shots.png');
+	}
+
+	&-player-assists {
+		@include ico-16;
+		background: url('../images/player_icons/icon_player-assits.png');
+	}
+
+	&-player-goals {
+		@include ico-16;
+		background: url('../images/player_icons/icon_player-goals.png');
+	}
+}

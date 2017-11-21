@@ -1,0 +1,139 @@
+// Project: Facebook Landing Page
+// http://bibintern.betitbest.com/public/index.php?path_info=projects/facebook-landing-page-der-apps
+// Author: Gregory Evans <gregory.evans@betitbest.com>
+// Created on: 2015/07/16
+
+// Slides
+.slider-wrapper {
+	border-top: 1px solid @border;
+}
+
+.app-slider {}
+
+// Flexislider
+.flexslider {
+	border-radius: 0 !important;
+	border: none !important;
+
+	// App Slider
+	.app-slider {
+
+		.flex-control-nav {
+			bottom: -10px !important;
+		}
+	}
+	// END: App Slider
+
+	.slides {
+
+		.slide {
+			width: 100%;
+			height: 300px;
+			overflow: hidden;
+
+			// Vertical align hack: parent setup
+			-webkit-transform-style: preserve-3d;
+			-moz-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+
+			.slide-left {
+				float: left;
+				width: 50%;
+				height: 100%;
+				padding-left: 65px;
+
+				img {
+					width: initial;
+					max-width: 100%;
+					height: auto;
+					margin: 0 auto;
+				}
+			}
+
+			.slide-right {
+				float: right;
+				width: 50%;
+				padding: 0 20px;
+
+				// Vertical align hack
+				position: relative;
+				top: 30%;
+				transform: translateY(-30%);
+
+				p {
+					width: 80%;
+				}
+
+				ul {
+					width: 80%;
+					padding: 0;
+					margin: 0;
+					font-size: 14px;
+					line-height: 20px;
+				}
+
+				li {
+					margin-left: 15px;
+					list-style: disc;
+
+				}
+			}
+		}
+	}
+
+	.flex-direction-nav a {
+		background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
+	    border-radius: 50px;
+	    color: rgba(0, 0, 0, 0);
+	    cursor: pointer;
+	    display: block;
+	    height: 55px;
+	    margin: -20px 0 0;
+	    opacity: 1;
+	    overflow: hidden;
+	    position: absolute;
+	    text-decoration: none;
+	    top: 50%;
+	    transition: all 0.3s ease 0s;
+	    width: 55px;
+	    z-index: 10;
+	
+		&::before {
+		    color: @red;
+		    display: block;
+		    font-size: 40px;
+		    height: 55px;
+		    line-height: 60px;
+		    text-align: center;
+		    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+		    width: 60px;
+		}
+
+		&.flex-prev::before {
+			width: 50px;
+		}
+	}
+
+	.flex-prev {
+	    left: 10px !important;
+	}
+
+	.flex-next {
+		right: 10px !important;
+	}
+
+	.flex-control-paging li a {
+		background: rgb(230, 230, 230) none repeat scroll 0 0;
+	    border-radius: 20px;
+	    cursor: pointer;
+	    display: block;
+	    height: 15px;
+	    text-indent: -9999px;
+	    width: 15px;
+	    box-shadow: none;
+
+	    &.flex-active {
+	    	background: rgba(0, 0, 0, 0.9);
+	    }
+	}
+}

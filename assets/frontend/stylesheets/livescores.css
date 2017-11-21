@@ -1,0 +1,998 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400, 600, 700, 300);
+    .match-list-items {
+    -ms-filter: "alpha(opacity=0)";
+    -khtml-opacity: 0;
+}
+@font-face {
+    font-family: MontserratBold;
+    src: url(../fonts/Montserrat-Bold-webfont.eot?1444125573);
+    src: url(../fonts/Montserrat-Bold-webfont.eot?&1444125573#iefix) format('embedded-opentype'), url(../fonts/Montserrat-Bold-webfont.woff?1444125573) format('woff'), url(../fonts/Montserrat-Bold-webfont.ttf?1444125573) format('truetype'), url(../fonts/Montserrat-Bold-webfont.svg?1444125573) format('svg');
+    font-weight: "bold"}
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Regular-webfont.eot?1444125573);
+    src: url(../fonts/Montserrat-Regular-webfont.eot?&1444125573#iefix) format('embedded-opentype'), url(../fonts/Montserrat-Regular-webfont.woff?1444125573) format('woff'), url(../fonts/Montserrat-Regular-webfont.ttf?1444125573) format('truetype'), url(../fonts/Montserrat-Regular-webfont.svg?1444125573) format('svg');
+}
+
+#livescore-type-tenis .team-type1-info,
+#livescore-type-tenis div.team1-info,
+#livescore-type-tenis div.team2-info
+{
+    width: 100%;
+    height: 60px;
+
+    border-right: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+    border-left: 1px solid #e3e3e3;
+}
+#livescore-type-tenis .team-type1-info img,
+#livescore-type-tenis div.team1-info img,
+#livescore-type-tenis div.team2-info img
+{
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+#livescore-type-tenis .team-type1-info > div,
+#livescore-type-tenis div.team1-info > div,
+#livescore-type-tenis div.team2-info > div
+{
+    line-height: 60px;
+
+    height: 60px;
+}
+#livescore-type-tenis .team-type1-tourname,
+#livescore-type-tenis .tourname,
+#livescore-type-tenis .match-date
+{
+    font-weight: bold;
+    line-height: 30px;
+
+    width: 100%;
+    height: 30px;
+
+    text-align: center;
+
+    border-top: 1px solid #e3e3e3;
+    border-right: 1px solid #e3e3e3;
+    border-left: 1px solid #e3e3e3;
+}
+.logo
+{
+    width: 8% !important;
+    height: 60% !important;
+    margin-top: 15px !important;
+
+    border: 0;
+    border-right: 0 !important;
+    background-repeat: no-repeat !important;
+    background-position: center!important;
+    background-size: contain !important;
+}
+.team1,
+.team2
+{
+    width: 20% !important;
+    height: 100% !important;
+    padding: 0 !important;
+
+    border-right: 0 !important;
+}
+.match-item
+{
+    height: 5em !important;
+
+    border: 1px solid #e3e3e3 !important;
+}
+.name-team
+{
+    width: 95% !important;
+    margin-top: .45em !important;
+}
+.divider
+{
+    padding: 0 !important;
+}
+.status
+{
+    font-size: .8em;
+
+    position: absolute;
+    bottom: 4%;
+    left: 10%;
+
+    width: 100%;
+    margin-left: 0 !important;
+}
+.status img
+{
+    top: -1px !important;
+
+    height: 1.3em!important;
+}
+.status.halftime
+{
+    left: 30%;
+}
+#livescore-type-tenis div.match-item-m.odd
+{
+    background-color: #f3f3f3;
+}
+#livescore-type-tenis a.live_link
+{
+    text-decoration: none;
+
+    color: #000;
+}
+#livescore-type-tenis .tourname
+{
+    height: 40px;
+
+    background-color: #d8d6d6;
+}
+#livescore-type-tenis .tourname a
+{
+    line-height: 40px;
+}
+#livescore-type-tenis .match-date
+{
+    width: 100%;
+}
+#livescore-type-tenis div.header-info
+{
+    width: 100%;
+    height: 30px;
+
+    border: 1px solid #e3e3e3;
+}
+#livescore-type-tenis div.header-info > div
+{
+    line-height: 30px;
+
+    height: 30px;
+}
+#livescore-type-tenis div.header-info div.large-left:nth-child(1) > span
+{
+    top: 5px;
+}
+#livescore-type-tenis div.team1-info
+{
+    border-bottom: none;
+}
+#livescore-type-tenis div.large-left
+{
+    font-weight: bold;
+
+    float: left;
+
+    text-indent: 10px;
+}
+#livescore-type-tenis div.large-left span img
+{
+    top: -6px !important;
+}
+@media (max-width: 800px)
+{
+    #livescore-type-tenis div.large-left:nth-child(2)
+    {
+        overflow: hidden;
+
+        width: 150px;
+        height: 60px;
+        padding: 0 5px;
+
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
+#livescore-type-tenis div.small-right
+{
+    float: right;
+
+    width: 30px;
+
+    text-align: center;
+
+    border-left: 1px solid #e3e3e3;
+}
+#livescore-type-tenis a.tournament_filter
+{
+    overflow: hidden;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+#livescore-type-tenis a.tournament_filter:hover
+{
+    font-weight: bold;
+
+    color: #8e1510 !important;
+}
+#livescore-type-soccer
+{
+    padding: 0 5px !important;
+}
+#livescore-type-soccer a
+{
+    text-decoration: none;
+}
+#livescore-type-tennis a
+{
+    text-decoration: none;
+}
+#livescore-type-soccer h3
+{
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    font-weight: 600;
+
+    margin: 0;
+    margin-bottom: 1em;
+    padding: 15px 0 0;
+
+    color: #6f1111;
+
+    -webkit-font-smoothing: antialiased;
+}
+#livescore-type-soccer h4
+{
+    font-family: Montserrat, sans-serif;
+    font-size: 1.33em;
+    font-weight: bold;
+
+    margin-top: 10px;
+    margin-bottom: .5em;
+
+    color: #222;
+}
+#livescore-type-soccer .row
+{
+    font-family: Montserrat, sans-serif;
+}
+.date,
+.team1,
+.team2
+{
+    font-size: 1.17em;
+    font-weight: 300;
+}
+#livescore-type-soccer .extend-score-ratio,
+#livescore-type-soccer div.match-item .team1 span.score-ratio,
+#livescore-type-soccer div.match-item .team2 span.score-ratio
+{
+    position: absolute !important;
+    top: 50% !important;
+
+    display: block !important;
+
+    width: 14% !important;
+    margin-top: -1.5em !important;
+}
+
+@media (max-width: 676px)
+{
+    #livescore-type-soccer .extend-score-ratio,
+    #livescore-type-soccer div.match-item .team1 span.score-ratio,
+    #livescore-type-soccer div.match-item .team2 span.score-ratio
+    {
+        /*margin-top: -2em !important;*/
+    }
+}
+#livescore-type-soccer div.match-list-items .name-team
+{
+    line-height: 22px;
+
+    position: relative !important;
+
+    display: table-cell;
+
+    width: 86% !important;
+
+    text-align: left;
+    vertical-align: middle;
+}
+@media (max-width: 700px)
+{
+    #livescore-type-soccer div.match-list-items .name-team
+    {
+        line-height: 15px;
+    }
+}
+#livescore-type-soccer div.match-list-items .score-ratio
+{
+    font-weight: bold;
+    line-height: 22px;
+
+    display: block;
+
+    width: 100%;
+
+    text-align: center;
+}
+#livescore-type-soccer .match-header div.match
+{
+    width: 60%;
+    height: 100%;
+    margin-left: -1px;
+}
+@media (max-width: 1000px)
+{
+    #livescore-type-soccer .match-header div.date
+    {
+        width: 8%;
+    }
+}
+#livescore-type-soccer div.match-item div.match
+{
+    width: 60%;
+
+    border-right: 1px solid #e3e3e3;
+    /*height: 6em;*/
+}
+#livescore-type-soccer .date
+{
+    font-size: .9em !important;
+}
+@media (max-width: 1000px)
+{
+    #livescore-type-soccer div.match-item div.date
+    {
+        font-size: 1em;
+
+        width: 8%;
+    }
+}
+#livescore-type-soccer div.match-item span.divider
+{
+    line-height: 2.4em !important;
+    height: 0 !important;
+    margin-top: 15px !important;
+}
+
+@media (max-width:700px) and (min-width:500px)
+{
+    .score-ratio
+    {
+        top: 20% !important;
+    }
+}​
+
+
+#livescore-type-soccer div.match-item .team1
+{
+    position: relative;
+}
+#livescore-type-soccer div.match-item .team1 span.score-ratio
+{
+    right: 0 !important;
+    padding-right: 3px !important;
+}
+#livescore-type-soccer div.match-item .team2
+{
+    position: relative;
+}
+#livescore-type-soccer div.match-item .team2 span.score-ratio
+{
+    left: 0 !important;
+    padding-left: 3px !important;
+}
+#livescore-type-soccer .match-header div.date,
+.match-item div.date
+{
+    font-size: 1em;
+    display: table !important;
+    height: 100%;
+    padding-top: 1.5em;
+}
+#livescore-type-soccer div.match-item div.date span.d-m,
+#livescore-type-soccer div.match-item div.date span.t-m
+{
+    display: table-row;
+
+    margin: .4em 0;
+}
+#livescore-type-soccer .match-item div
+{
+    padding: 1em 1em;
+}
+#livescore-type-soccer div.match-item div.date span.small-separate
+{
+    display: none;
+}
+#livescore-type-soccer div.match-item a.live_link
+{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #000;
+}
+#livescore-type-tennis div.match-item a.live_link
+{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #000;
+}
+.statistic
+{
+    font-size: 1.5em !important;
+    border-left: 1px solid #e3e3e3 !important;
+}
+.d-m
+{
+    display: none;
+}
+@media (max-width: 1400px)
+{
+    .statistic
+    {
+        font-size: 1em;
+    }
+}
+@media (max-width: 1100px)
+{
+    .team1,
+    .team2
+    {
+        width: 18% !important;
+    }
+    .statistic
+    {
+        width: 10% !important;
+    }
+}
+#livescore-type-soccer .mfp-iframe-scaler iframe
+{
+    height: 92%;
+}
+#livescore-type-soccer a.tournament_filter:hover
+{
+    font-weight: bold;
+
+    color: #8e1510 !important;
+}
+.alone-team-nav
+{
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+    line-height: 34px;
+
+    width: 100%;
+    height: 35px;
+    padding: 10px 0;
+
+    cursor: pointer;
+    text-align: center;
+
+    color: #fff;
+    background-color: #262626;
+}
+.alone-team-nav > span
+{
+    display: inline-block;
+
+    padding: 0 10px;
+
+    text-transform: none;
+
+    -webkit-border-radius: 20px;
+       -moz-border-radius: 20px;
+            border-radius: 20px;
+    background: #71110d;
+}
+.alone-team-nav > span > b
+{
+    font-weight: 300;
+
+    padding-right: 10px;
+}
+.alone-team-nav > span > i
+{
+    font-style: normal;
+}
+.alone-team-nav > span > i:hover
+{
+    color: #aaa;
+}
+h3
+{
+    font-size: 18px;
+    font-weight: 600;
+
+    margin: 0 !important;
+    margin-bottom: 0 !important;
+    padding: 15px 0 0 !important;
+
+    color: #6f1111;
+
+    -webkit-font-smoothing: antialiased;
+}
+
+
+#livescore-type-soccer .newsnav,
+#livescore-type-tenis .newsnav
+{
+    z-index: 0;
+
+    display: flex;
+
+    width: 100%;
+    min-height: 35px;
+    margin: 1em auto 0;
+
+    background-color: white;
+}
+
+#livescore-type-soccer .newsnav div,
+#livescore-type-tenis .newsnav div
+{
+    position: relative !important;
+
+    margin: auto;
+
+    border-radius: 50px;
+    background-color: #6f1111;
+}
+
+#livescore-type-soccer .newsnav a,
+#livescore-type-tenis .newsnav a
+{
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 45px;
+
+    display: block;
+
+    /*width: 100px;*/
+    height: 50px;
+    padding: 0 15px;
+
+    text-decoration: none;
+
+    color: #fff;
+    border-radius: 50px;
+
+    -webkit-font-smoothing: antialiased;
+}
+@media only screen and (max-width: 680px)
+{
+    #livescore-type-soccer .newsnav
+    {
+        position: relative !important;
+    }
+    #livescore-type-tenis .newsnav
+    {
+        position: relative !important;
+    }
+}
+
+
+/*560px*/
+@media (max-width: 560px)
+{
+    #livescore-type-tenis
+    {
+        padding-right: 5px !important;
+        padding-left: 5px !important;
+    }
+    #livescore-type-tenis div.match-item-m
+    {
+        font-size: 11px;
+    }
+     #livescore-type-tenis div.team1-info
+    {
+        height: 40px;
+    }
+    #livescore-type-tenis div.team1-info img
+    {
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+    }
+    #livescore-type-tenis div.team1-info img:nth-child(2)
+    {
+        margin-top: 10px !important;
+    }
+    #livescore-type-tenis div.team1-info > div
+    {
+        line-height: 40px;
+
+        height: 40px;
+    }
+    #livescore-type-tenis div.team1-info > div.large-left:nth-child(3) img
+    {
+        margin-top: 10px !important;
+    }
+    #livescore-type-tenis div.team2-info
+    {
+        height: 40px;
+    }
+    #livescore-type-tenis div.team2-info img
+    {
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+    }
+    #livescore-type-tenis div.team2-info > div
+    {
+        line-height: 40px;
+
+        height: 40px;
+    }
+    #livescore-type-tenis div.team2-info > div.large-left:nth-child(3) img
+    {
+        margin-top: 10px !important;
+    }
+    #livescore-type-tenis div.large-left
+    {
+        text-indent: 0;
+    }
+    #livescore-type-tenis div.large-left:nth-child(2)
+    {
+        overflow: hidden;
+
+        width: 40%;
+        height: 40px;
+
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    #livescore-type-tenis div.large-left span img
+    {
+        top: -7px !important;
+    }
+     #livescore-type-tenis div.small-right
+    {
+        font-size: 11px;
+
+        width: 25px;
+    }
+    #livescore-type-tenis a.tournament_filter
+    {
+        font-size: 12px;
+
+        display: block;
+    }
+}
+/*560px END*/
+
+/*500px*/
+@media (max-width: 500px) 
+{
+    #livescore-type-soccer .extend-score-ratio,
+    #livescore-type-soccer div.match-item .team1 span.score-ratio,
+    #livescore-type-soccer div.match-item .team2 span.score-ratio
+    {
+        position: absolute;
+        top: 50%;
+
+        width: 15%;
+        min-width: 10px;
+        margin-top: -8% !important;
+
+        text-align: center !important;
+    }
+    #livescore-type-soccer .name-container
+    {
+        font-size: .75em;
+
+        padding: 0 !important;
+    }
+    #livescore-type-soccer .newsnav a,
+    #livescore-type-tenis .newsnav a
+    {
+        font-size: 10px !important;
+        line-height: 30px !important;
+
+        display: flex !important;
+
+        /*width: 50px !important;*/
+        height: 35px !important;
+    }
+    #livescore-type-soccer .newsnav img, 
+    #livescore-type-tenis .newsnav img
+    {
+        height: 20px !important;
+    }
+
+    #livescore-type-soccer .newsnav .fav .icon,
+    #livescore-type-tenis .newsnav .fav .icon
+    {
+        font-size: 10px !important;
+    }
+    #livescore-type-soccer .newsnav .fav .text,
+    #livescore-type-tenis .newsnav .fav .text
+    {
+        font-size: 8px;
+        line-height: normal;
+    }
+    #livescore-type-soccer div.match-list-items .name-team
+    {
+        line-height: normal;
+
+        width: 85% !important;
+    }
+    #livescore-type-soccer div.match-item
+    {
+        position: relative;
+
+        height: 110px !important;
+    }
+    #livescore-type-soccer div.match-item div.tournament
+    {
+        font-size: 11px;
+        font-weight: bold;
+
+        float: right;
+        clear: none;
+
+        width: 40px;
+        width: 165px;
+        height: auto !important;
+        min-height: 30px;
+
+        text-align: right;
+
+        border-bottom: none;
+        border-left: none;
+    }
+    #livescore-type-soccer div.match-item div.tournament a
+    {
+        font-weight: bold !important;
+        line-height: 15px;
+    }
+    #livescore-type-soccer div.match-item div.tournament strong.mobile
+    {
+        display: none;
+    }
+    #livescore-type-soccer div.match-item div.tournament span.table-cell
+    {
+        display: block;
+    }
+    #livescore-type-soccer div.match-item div.match
+    {
+        width: 100%;
+
+        border-right: none;
+        border-bottom: none;
+    }
+    .divider
+    {
+        border: 0 !important;
+    }
+    .name-team
+    {
+        margin-right: 10% !important;
+    }
+    .logo
+    {
+        width: 18% !important;
+    }
+    .team1,
+    .team2
+    {
+        width: 26% !important;
+
+        border-right: 0 !important;
+    }
+    .statistic
+    {
+        display: none !important;
+    }
+    #livescore-type-soccer div.match-item .team1
+    {
+        position: relative;
+    }
+    #livescore-type-soccer div.match-item .team1 .score-ratio
+    {
+        right: 0;
+    }
+     #livescore-type-soccer div.match-item .team2
+    {
+        position: relative;
+    }
+
+    #livescore-type-soccer div.match-item .team2 .score-ratio
+    {
+        left: 0;
+    }
+    #livescore-type-soccer div.match-item div.date
+    {
+        font-size: 11px;
+        font-weight: bold;
+
+        float: left !important;
+
+        width: 120px;
+        height: 40px;
+        height: auto !important;
+        min-height: 30px;
+
+        text-align: left;
+
+        border-right: none !important;
+        border-bottom: none !important;
+    }
+    #livescore-type-soccer div.match-item div.date span.d-m,
+    #livescore-type-soccer div.match-item div.date span.t-m
+    {
+        display: inline;
+
+        width: auto !important;
+    }
+    #livescore-type-soccer div.match-item div.date span.small-separate
+    {
+        line-height: 20px;
+
+        display: inline;
+
+        padding-right: 3px;
+        padding-left: 3px;
+    }
+     #livescore-type-soccer div.match-item a.live_link
+    {
+        font-size: 11px;
+
+        position: absolute !important;
+        bottom: 0;
+        left: 0;
+
+        display: block;
+
+        width: 100%;
+        height: 80px;
+    }
+    .team1,
+    .team2
+    {
+        width: 20% !important;
+    }
+    .statistic
+    {
+        width: 8% !important;
+    }
+    .divider
+    {
+        display: table !important;
+
+        width: 22% !important;
+    }
+    .status
+    {
+        font-size: .7em !important;
+
+        position: absolute;
+        bottom: 10% !important;
+    }
+    .divider .d-m
+    {
+        display: table-cell !important;
+
+        text-align: center;
+    }
+    #sectionnav li a
+    {
+        font-size: 10px;
+    }
+    #langswitch
+    {
+        font-size: 10px;
+    }
+}
+/*500px END*/
+
+
+
+/* CSS animated loading dots*/
+.loading_dots.loading_matches
+{
+    font-size: 1em; 
+    line-height: 1;
+
+    width: 2.75em;
+    margin: auto;
+    margin-bottom: 2%;
+    padding: .125em 0 .175em .55em;
+
+    border-radius: 5px;
+    background-color: rgba(0,0,0,.2);
+    box-shadow: inset 0 1px 0 rgba(0,0,0,.3),
+    0 1px 0 rgba(255,255,255,.3);
+}
+
+.loading_dots.loading_matches span
+{
+    display: inline-block;
+
+    width: .6em;
+    height: .6em;
+
+    -webkit-animation: loading_dots .8s linear infinite;
+       -moz-animation: loading_dots .8s linear infinite;
+        -ms-animation: loading_dots .8s linear infinite;
+            animation: loading_dots .8s linear infinite;
+
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: inset 0 0 1px rgba(0,0,0,.3);
+}
+.loading_dots.loading_matches span:nth-child(2)
+{
+    -webkit-animation-delay: .2s;
+       -moz-animation-delay: .2s;
+        -ms-animation-delay: .2s;
+            animation-delay: .2s;
+}
+.loading_dots.loading_matches span:nth-child(1)
+{
+    -webkit-animation-delay: .4s;
+       -moz-animation-delay: .4s;
+        -ms-animation-delay: .4s;
+            animation-delay: .4s;
+}
+
+/*Define the animation for every efing vendor prefix*/
+@-webkit-keyframes loading_dots
+{
+    0%
+    {
+        background: transparent;
+    }
+    50%
+    {
+        background: #e4e4e4;
+    }
+    100%
+    {
+        background: transparent;
+    }
+}
+
+@-moz-keyframes loading_dots
+{
+    0%
+    {
+        background: transparent;
+    }
+    50%
+    {
+        background: #e4e4e4;
+    }
+    100%
+    {
+        background: transparent;
+    }
+}
+@-ms-keyframes loading_dots
+{
+    0%
+    {
+        background: transparent;
+    }
+    50%
+    {
+        background: #e4e4e4;
+    }
+    100%
+    {
+        background: transparent;
+    }
+}
+@keyframes loading_dots
+{
+    0%
+    {
+        background: transparent;
+    }
+    50%
+    {
+        background: #e4e4e4;
+    }
+    100%
+    {
+        background: transparent;
+    }
+}
+
+/*End loading dots animation */

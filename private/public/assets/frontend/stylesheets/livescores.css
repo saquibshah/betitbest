@@ -1,0 +1,410 @@
+#livescore-type-tenis .team-type1-info, #livescore-type-tenis div.team1-info, #livescore-type-tenis div.team2-info {
+    width: 100%;
+    border-left: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+    border-right: 1px solid #e3e3e3;
+    height: 60px;
+}
+#livescore-type-tenis .team-type1-info img, #livescore-type-tenis div.team1-info img, #livescore-type-tenis div.team2-info img {
+    height: 40px;
+    margin: 5px;
+    width: 40px;
+}
+#livescore-type-tenis .team-type1-info>div, #livescore-type-tenis div.team1-info>div, #livescore-type-tenis div.team2-info>div {
+    height: 60px;
+    line-height: 60px;
+}
+#livescore-type-tenis .team-type1-tourname, #livescore-type-tenis .tourname, #livescore-type-tenis .match-date {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    border-left: 1px solid #e3e3e3;
+    border-right: 1px solid #e3e3e3;
+    border-top: 1px solid #e3e3e3;
+}
+@media (max-width: 560px) {
+    #livescore-type-tenis {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+}
+#livescore-type-tenis div.match-item-m.odd {
+    background-color: #f3f3f3;
+}
+@media (max-width: 560px) {
+    #livescore-type-tenis div.match-item-m {
+    font-size: 11px;
+}
+}
+#livescore-type-tenis a.live_link {
+    text-decoration: none;
+    color: #000;
+}
+#livescore-type-tenis .tourname {
+    background-color: #D8D6D6;
+    height: 40px;
+}
+#livescore-type-tenis .tourname a {
+    line-height: 40px;
+}
+#livescore-type-tenis .match-date {
+    width: 100%}
+#livescore-type-tenis div.header-info {
+    height: 30px;
+    width: 100%;
+    border: 1px solid #e3e3e3;
+}
+#livescore-type-tenis div.header-info>div {
+    height: 30px;
+    line-height: 30px;
+}
+#livescore-type-tenis div.header-info div.large-left:nth-child(1)>span {
+    top: 5px;
+}
+#livescore-type-tenis div.team1-info {
+    border-bottom: none;
+}
+@media (max-width: 560px) {
+    #livescore-type-tenis div.team1-info {
+    height: 40px;
+}
+#livescore-type-tenis div.team1-info img {
+    height: 30px;
+    margin: 5px;
+    width: 30px;
+}
+#livescore-type-tenis div.team1-info img:nth-child(2) {
+    margin-top: 10px !important;
+}
+#livescore-type-tenis div.team1-info>div {
+    height: 40px;
+    line-height: 40px;
+}
+#livescore-type-tenis div.team1-info>div.large-left:nth-child(3) img {
+    margin-top: 10px !important;
+}
+}
+@media (max-width: 560px) {
+    #livescore-type-tenis div.team2-info {
+    height: 40px;
+}
+#livescore-type-tenis div.team2-info img {
+    height: 30px;
+    margin: 5px;
+    width: 30px;
+}
+#livescore-type-tenis div.team2-info>div {
+    height: 40px;
+    line-height: 40px;
+}
+#livescore-type-tenis div.team2-info>div.large-left:nth-child(3) img {
+    margin-top: 10px !important;
+}
+}
+#livescore-type-tenis div.large-left {
+    float: left;
+    text-indent: 10px;
+    font-weight: bold;
+}
+#livescore-type-tenis div.large-left span img {
+    top: -6px !important;
+}
+@media (max-width: 800px) {
+    #livescore-type-tenis div.large-left: nth-child(2) {
+    width: 150px;
+    padding: 0px 5px;
+    height: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+}
+@media (max-width: 560px) {
+    #livescore-type-tenis div.large-left {
+    text-indent: 0px;
+}
+#livescore-type-tenis div.large-left:nth-child(2) {
+    height: 40px;
+    width: 90px;
+}
+#livescore-type-tenis div.large-left span img {
+    top: -7px !important;
+}
+}
+#livescore-type-tenis div.small-right {
+    float: right;
+    width: 30px;
+    text-align: center;
+    border-left: 1px solid #e3e3e3;
+}
+@media (max-width: 560px) {
+    #livescore-type-tenis div.small-right {
+    font-size: 11px;
+    width: 15px;
+}
+}
+#livescore-type-tenis a.tournament_filter {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#livescore-type-tenis a.tournament_filter:hover {
+    color: #8e1510 !important;
+    font-weight: bold;
+}
+@media (max-width: 560px) {
+    #livescore-type-tenis a.tournament_filter {
+    font-size: 12px;
+    display: block;
+}
+}
+#livescore-type-soccer {
+    padding: 0px 5px !important;
+}
+#livescore-type-soccer .extend-score-ratio, #livescore-type-soccer div.match-item .team1 span.score-ratio, #livescore-type-soccer div.match-item .team2 span.score-ratio {
+    position: absolute !important;
+    top: 50% !important;
+    display: block !important;
+    margin-top: -11px !important;
+    width: 14% !important;
+}
+@media (max-width: 500px) {
+    #livescore-type-soccer .extend-score-ratio, #livescore-type-soccer div.match-item .team1 span.score-ratio, #livescore-type-soccer div.match-item .team2 span.score-ratio {
+    position: absolute;
+    top: 50%;
+    margin-top: -7%;
+    min-width: 10px;
+    text-align: center !important;
+    width: 15%}
+}
+#livescore-type-soccer div.match-list-items .name-team {
+    display: block;
+    width: 86% !important;
+    line-height: 22px;
+    text-align: center;
+    position: relative !important;
+}
+@media (max-width: 700px) {
+    #livescore-type-soccer div.match-list-items .name-team {
+    line-height: 15px;
+}
+}
+@media (max-width: 500px) {
+    #livescore-type-soccer div.match-list-items .name-team {
+    line-height: normal;
+    width: 85% !important;
+}
+}
+#livescore-type-soccer div.match-list-items .score-ratio {
+    display: block;
+    width: 100%;
+    text-align: center;
+    line-height: 22px;
+    font-weight: bold;
+}
+#livescore-type-soccer .match-header div.match {
+    width: 60%}
+@media (max-width: 1000px) {
+    #livescore-type-soccer .match-header div.date {
+    width: 8%}
+}
+@media (max-width: 500px) {
+    #livescore-type-soccer div.match-item {
+    position: relative;
+    height: 110px !important;
+}
+#livescore-type-soccer div.match-item div.tournament {
+    clear: none;
+    float: right;
+    width: 40px;
+    font-weight: bold;
+    text-align: right;
+    border-left: none;
+    border-bottom: none;
+    width: 165px;
+    font-size: 11px;
+    height: auto !important;
+    min-height: 30px;
+}
+#livescore-type-soccer div.match-item div.tournament a {
+    font-weight: bold !important;
+    line-height: 15px;
+}
+#livescore-type-soccer div.match-item div.tournament strong.mobile {
+    display: none;
+}
+#livescore-type-soccer div.match-item div.tournament span.table-cell {
+    display: block;
+}
+}
+#livescore-type-soccer div.match-item div.match {
+    border-right: 1px solid #e3e3e3;
+    width: 60%;
+    height: 6em;
+}
+@media (max-width: 500px) {
+    #livescore-type-soccer div.match-item div.match {
+    width: 100%;
+    border-bottom: none;
+    border-right: none;
+}
+}
+@media (max-width: 1000px) {
+    #livescore-type-soccer div.match-item div.date {
+    width: 8%;
+    font-size: 1em;
+	}
+}
+#livescore-type-soccer div.match-item span.divider {
+    line-height: 2.4em !important;
+    margin-top: 15px !important;
+    height: 0px !important;
+}
+@media (max-width: 676px) {
+    #livescore-type-soccer div.match-item span.divider {
+    margin-top: 10px !important;
+}
+}
+@media (max-width: 500px) {
+    #livescore-type-soccer div.match-item span.divider {
+    margin-top: 12px !important;
+    border-right: none;
+    margin-top: 2px !important;
+    line-height: 5em !important;
+}
+#livescore-type-soccer div.match-item span.divider>span {
+    display: block !important;
+    position: absolute;
+    left: 0px;
+    line-height: 4.5em !important;
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+    top: 35px;
+}
+}
+#livescore-type-soccer div.match-item .team1 {
+    position: relative;
+}
+#livescore-type-soccer div.match-item .team1 span.score-ratio {
+    right: 0px !important;
+    padding-right: 3px !important;
+}
+@media (max-width: 500px) {
+    #livescore-type-soccer div.match-item .team1 {
+    position: relative;
+}
+#livescore-type-soccer div.match-item .team1 .score-ratio {
+    right: 0px;
+}
+}
+#livescore-type-soccer div.match-item .team2 {
+    position: relative;
+}
+#livescore-type-soccer div.match-item .team2 span.score-ratio {
+    left: 0px !important;
+    padding-left: 3px !important;
+}
+@media (max-width: 500px) {
+    #livescore-type-soccer div.match-item .team2 {
+    position: relative;
+}
+#livescore-type-soccer div.match-item .team2 .score-ratio {
+    left: 0px;
+}
+}
+#livescore-type-soccer div.match-item div.date span.d-m, #livescore-type-soccer div.match-item div.date span.t-m {
+    display: block;
+    line-height: 20px;
+    width: 100%}
+#livescore-type-soccer div.match-item div.date span.small-separate {
+    display: none;
+}
+@media (max-width: 500px) {
+    #livescore-type-soccer div.match-item div.date {
+    height: 40px;
+    border-right: none !important;
+    border-bottom: none !important;
+    float: left !important;
+    font-weight: bold;
+    text-align: left;
+    font-size: 11px;
+    width: 120px;
+    height: auto !important;
+    min-height: 30px;
+}
+#livescore-type-soccer div.match-item div.date span.d-m, #livescore-type-soccer div.match-item div.date span.t-m {
+    display: inline;
+    width: auto !important;
+}
+#livescore-type-soccer div.match-item div.date span.small-separate {
+    display: inline;
+    padding-left: 3px;
+    padding-right: 3px;
+    line-height: 20px;
+}
+}
+#livescore-type-soccer div.match-item a.live_link {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #000;
+}
+@media (max-width: 500px) {
+    #livescore-type-soccer div.match-item a.live_link {
+    position: absolute !important;
+    width: 100%;
+    height: 80px;
+    bottom: 0px;
+    left: 0px;
+    font-size: 11px;
+    display: block;
+}
+}
+#livescore-type-soccer .mfp-iframe-scaler iframe {
+    height: 92%}
+#livescore-type-soccer a.tournament_filter:hover {
+    color: #8e1510 !important;
+    font-weight: bold;
+}
+.alone-team-nav {
+    cursor: pointer;
+    font-size: 15px;
+    height: 35px;
+    line-height: 34px;
+    padding: 10px 0px;
+    text-align: center;
+    width: 100%;
+    background-color: #262626;
+    font-family: Montserrat, sans-serif;
+    color: #FFF;
+}
+.alone-team-nav>span {
+    background: #71110d;
+    display: inline-block;
+    padding: 0 10px;
+    text-transform: none;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+}
+.alone-team-nav>span>b {
+    font-weight: 300;
+    padding-right: 10px;
+}
+.alone-team-nav>span>i {
+    font-style: normal;
+}
+.alone-team-nav>span>i:hover {
+    color: #AAA;
+}
+@media (max-width: 500px) {
+    #sectionnav li a {
+    font-size: 10px;
+}
+#langswitch {
+    font-size: 10px;
+}
+}

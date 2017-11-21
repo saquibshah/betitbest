@@ -1,0 +1,61 @@
+.socialmedia {
+    display: table;
+    margin-top: 20px;
+
+    > div {
+        display: table-cell;
+        vertical-align: top;
+    }
+
+    &.small-viewports {
+        width: 100%;
+
+        .icon {
+            width: 100%;
+            display: inline-block;
+            text-align: justify;
+
+            &:after {
+                content: '';
+                display: inline-block;
+                width: 100%;
+            }
+
+            a {
+                display: inline-block;
+                width: 56px;
+                height: 56px;
+                list-style: none;
+                background-repeat: no-repeat !important;
+
+                &.facebook {
+                    background: url(../images/social/facebook.png);
+                }
+
+                &.twitter {
+                    background: url(../images/social/twitter.png);
+                }
+
+                &.googleplus {
+                    background: url(../images/social/googleplus.png);
+                }
+
+                &.whatsapp {
+                    background: url(../images/social/whatsapp.png);
+                }
+
+                &.email {
+                    background: url(../images/social/email.png);
+                }
+
+                &.facebook, &.twitter, &.googleplus, &.whatsapp, &.email {
+                    background-size: contain;
+                }
+
+                &:hover {
+                    opacity: 0.75;
+                }
+            }
+        }
+    }
+}

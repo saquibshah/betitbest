@@ -1,0 +1,474 @@
+@import 'compass/css3/border-radius';
+@import 'partials/base';
+
+body {
+    color: #2a2a2a;
+    margin: 0;
+}
+
+#main {
+
+    .startpage {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 45px 0;
+
+        h2 {
+            font-size: 26px;
+            font-weight: 400;
+            line-height: 26px;
+            margin: 0;
+            padding: 0;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            color: #8e1510;
+            font-size: 18px;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+
+        img {
+            height: auto;
+            max-width: 100%;
+        }
+
+        ul {
+            padding-left: 15px;
+        }
+
+    }
+
+    .small-pagehead {
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        margin: 0;
+        padding: 0 0 10px 0;
+        text-transform: uppercase;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .left {
+        float: left;
+        width: 50%;
+    }
+
+    .right {
+        float: right;
+        width: 40%;
+    }
+}
+
+.startpage.padding-bottom {
+    padding-bottom: 1em;
+}
+
+.clearfix {
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+.aboutus {
+    .redheadline {
+        color: #8e1510;
+    }
+
+    h1 {
+        font-size: 14px;
+    }
+}
+
+.teaser-text {
+    box-sizing: border-box;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 80px;
+    position: absolute;
+    top: 10em;
+    width: 100%;
+    z-index: 100;
+
+    .teaser-head {
+        color: #fff;
+        font-size: 4em;
+        font-weight: 600;
+        letter-spacing: 2px;
+        line-height: 1.1em;
+        padding-top: 75px;
+        text-shadow: 0 0 15px black;
+        text-transform: uppercase;
+    }
+
+    .teaser-button {
+        @include border-radius(30px);
+
+        background: #8e1510;
+        color: #fff;
+        display: inline-block;
+        font-size: 2em;
+        margin: 25px auto 0;
+        padding: 8px 30px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+}
+
+#main {
+
+    .flex-spinner {
+        display: block;
+        background: url('../images/spinner.gif') no-repeat center;
+        width: 64px;
+        height: 64px;
+        margin: 15% auto;
+
+        &.loaded {
+            display: none;
+        }
+    }
+    
+    .flexslider {
+        margin: 0;
+
+        &[style] {
+            height: auto !important;
+        }
+
+        &.loading {
+            display: none;
+        }
+
+        .flex-control-nav {
+            bottom: inherit;
+            position: absolute;
+            text-align: center;
+            top: 32%;
+            width: 100%;
+            z-index: 100;
+
+            display: none;
+        }
+
+        .flex-control-paging {
+            li  {
+                a  {
+                    background: #fff;
+
+                    &.flex-active {
+                        background: $dark-red-bg;
+                    }
+                }
+            }
+        }
+
+        .flex-direction-nav a {
+            top: 18em; 
+
+            &:before {
+                font-family: flexslider-icon;
+                font-size: 40px;
+                display: block;
+                width: 60px;
+                height: 55px;
+                line-height: 60px;
+                text-align: center;
+                content: '\f001';
+                color: #71110d;
+                text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+            }
+        }
+
+        .flex-direction-nav a.flex-prev:before {
+            width: 50px;
+        }
+
+        .flex-direction-nav a.flex-next:before {
+            content: '\f002';
+        }
+
+
+        ul.slides li {
+            display: table-cell !important;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .padding {
+            margin: 40px auto;
+            text-align: left;
+        }
+    }
+
+    .padding {
+        clear: both;
+    }
+}
+
+.welovesports {
+    background: url(../images/welovesports-icon-black.png) no-repeat center;
+    background-size: contain;
+    display: block;
+    height: 65px;
+    margin: -20px auto 20px;
+    max-width: 30%;
+    width: 338px;
+}
+
+.padding section > div a {
+    text-decoration: none;
+
+    &.appstore-link > img {
+        height: 45px !important;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    #main {
+
+        .flexslider {
+            font-size: 8px;
+
+            .flex-control-nav {
+                // top: 33em; // 8 x 33
+            }
+
+            .teaser-head {
+                padding-top: 0;
+            }
+
+            .teaser-text {
+                top: 17em; // 8 x 17
+            }
+
+            .pre-headline {
+                font-size: 12px;
+            }
+
+            .content {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    #main {
+
+        .flexslider {
+
+        }
+    }
+}
+
+@media only screen and (max-width: 1180px) {
+    #main {
+
+        .flexislider {
+
+            .flex-control-nav {
+                // top: 32em;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    #main {
+
+        .flexslider {
+            font-size: 7px;
+
+            .flex-direction-nav a {
+            }
+
+            .flex-control-nav {
+               // top: 32em; // 7 x 32
+            }
+
+            .padding {
+                padding: 0 20px; 
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .startpage.padding-bottom {
+        padding: 0 20px;
+    }
+
+    #main {
+
+        .left {
+            float: none;
+            width: 100%;
+        }
+
+        .right {
+            float: none;
+            width: 100%;
+        }
+
+        .picture {
+            text-align: center;
+            margin-top: 2em;
+
+            img {
+                max-width: 50%;
+            }
+        }
+
+        .flexslider {
+
+            .teaser-text {
+                top: 0;
+            }
+
+            .teaser-head {
+                padding-top: 3.8em;
+            }
+
+            .teaser-button {
+                font-size: 3em;
+            }
+
+            .flex-direction-nav {
+
+                a {
+                    top: 16em;
+                }
+            }
+
+            .flex-control-nav {
+                display: none;
+            }
+
+            .padding {
+                padding: 0 20px; 
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 620px) {
+
+    #main {
+
+        .flexslider {
+
+            .teaser-head {
+                // padding-top: 2.9em;
+            }
+
+            .teaser-button {
+                margin-top: 15px;
+            }
+
+            .flex-direction-nav a {
+                top: 13em;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    #main {
+
+        .flexslider {
+            font-size: 4px;
+
+            .teaser-text {
+                top: 0;
+            }
+
+            .teaser-head {
+                font-size: 6em;
+                padding-top: 3em;
+            }
+
+            .teaser-button {
+                font-size: 4em;
+            }
+
+            .slide-image {
+                width: 150%;
+                margin-left: -25%;
+            }
+
+            .flex-direction-nav {
+
+                a {
+                    top: 22em;
+                }
+            }
+
+            .flex-control-nav {
+                display: none;
+            }
+
+            .padding {
+                padding: 0 20px; 
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 380px) {
+
+     #main {
+
+        .flexslider {
+
+            .teaser-head {
+                font-size: 5em;
+            }
+
+            .teaser-head {
+            }
+
+             .flex-direction-nav {
+
+                a {
+                    top: 18em;
+                }
+            }
+
+            .teaser-button {
+                font-size: 4em;
+            }
+        }
+     }
+}
+
+@media only screen and (max-width: 320px) {
+
+    #main {
+
+        .flexslider {
+
+            .teaser-head {
+                font-size: 4em;
+            }
+        }
+    }
+}
+
+// 1920x1080   1366x768    1280x1024   1280x800    1024x768    800x600 Lower

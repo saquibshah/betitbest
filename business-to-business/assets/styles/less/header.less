@@ -1,0 +1,209 @@
+// Header
+#header {
+	background: rgba(255, 255, 255, 0.9);
+    box-sizing: border-box;
+    color: #262626;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 60px;
+
+    .center {
+    	padding: 0;
+    }
+    
+    ul, 
+	li {
+		padding: 0;
+		margin: 0;
+	}
+}
+
+.logo {
+	display: inline-block;
+    float: left;
+    // padding: 15px 5px 10px 0;
+}
+
+// Menu
+#menu {
+	float: left;
+
+	ul {
+		list-style: none;
+
+	}
+
+	li {
+		display: inline-block;
+		float: left;
+		.flex();
+		position: relative;
+	}
+
+	.active {
+		a {
+			background: @red;
+			color: #fff;
+
+			&:hover {
+				color: #fff;
+				text-decoration: none;	
+			}
+		}
+	}
+
+	.page03 {
+
+		.indicator {
+			li {}
+		}		
+	}
+
+	.indicator {
+	    display: none;
+	    height: 16px;
+	    left: 0;
+	    position: absolute;
+	    top: 62px;
+	    width: 100%;
+
+		li {
+			list-style: none;
+			text-align: center;
+			padding: 0;
+			width: 50%;
+			display: block;
+		}
+
+		a {
+			width: 16px;
+			height: 16px;
+			border-radius: 50px;
+			background: #fff;
+			border: 2px solid #333;
+			line-height: 25px;
+			padding: 0;
+			margin: 0;
+			text-indent: -9999px;
+			margin: 0 5px;
+		}
+
+		.ind-01 {
+			display: block;
+			float: right;
+			margin-right: 5px;
+		}
+
+		.ind-02 {
+			display: block;
+			float: left;
+			margin-left: 5px;
+		}
+	}
+
+	.sub-active {
+		a {
+			background: @dark-red;
+			color: #fff;
+
+			&:hover {
+				color: #fff;
+				text-decoration: none;	
+			}
+		}
+	}
+
+	li[data-menuanchor="page00"] {
+		display: none;
+	}
+
+	li[data-menuanchor="page04"],
+	li[data-menuanchor="page06"] {
+		display: none;
+	}
+
+	a {
+		color: #464646;
+	    display: block;
+	    font-size: 12px;
+	    font-weight: 300;
+	    height: 60px;
+	    line-height: 60px;
+	    padding: 0 25px;
+	    text-decoration: none;
+	    text-transform: uppercase;
+
+	    &:hover {
+	    	color: @red;
+	    	text-decoration: underline;
+	    }
+	}
+}
+
+// menu double page hack
+.fp-viewing-page04 #menu .page03 a,
+.fp-viewing-page06 #menu .page05 a {
+   background: @dark-red;
+   color: #fff;
+   text-decoration: none;
+}
+
+.fp-viewing-page03 #menu .page03,
+.fp-viewing-page04 #menu .page03 {
+	
+	.indicator {
+		display: block;
+	}
+}
+
+.fp-viewing-page03 #menu .page03 {
+
+	.indicator {
+		
+		.ind-01 {
+			background: #333;
+		}
+	}
+}
+
+.fp-viewing-page04 #menu .page03 {
+	
+	.ind-01 {
+		background: #fff;
+	}
+
+	.ind-02 {
+		background: #333;
+	}
+}
+
+.fp-viewing-page05 #menu .page05,
+.fp-viewing-page06 #menu .page05 {
+	
+	.indicator {
+		display: block;
+	}	
+}
+
+.fp-viewing-page05 #menu .page05 {
+
+	.indicator {
+		
+		.ind-01 {
+			background: #333;
+		}
+	}
+}
+
+.fp-viewing-page06 #menu .page05 {
+	
+	.ind-01 {
+		background: #fff;
+	}
+
+	.ind-02 {
+		background: #333;
+	}
+}

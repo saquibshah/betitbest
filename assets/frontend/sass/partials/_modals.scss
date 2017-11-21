@@ -1,0 +1,112 @@
+@import "compass/css3/border-radius";
+@import "compass/css3/box-shadow";
+@import "compass/css3/images";
+@import "base";
+
+.modal {
+    background: #fff;
+    left: 30%;
+    opacity: 0;
+    position: fixed;
+    right: 30%;
+    top: 10%;
+    z-index: 101;
+}
+
+.modal-close {
+    background: $left-nav-badge-bg;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 12px;
+    font-style: inherit;
+    height: 18px;
+    line-height: 18px;
+    position: absolute;
+    right: 20px;
+    text-align: center;
+    top: 20px;
+    width: 18px;
+    @include border-radius(100%);
+    @include box-shadow(rgba(0, 0, 0, .2) 0px 2px 3px inset);
+}
+
+.modal-actions {
+    background: #eee;
+    border-top: 1px solid #ddd;
+    bottom: 0;
+    height: 80px;
+    left: 0;
+    line-height: 80px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+}
+
+.modal-inner {
+    padding: 30px 65px;
+
+    h2 {
+        font-family: MontserratBold, sans-serif;
+        font-size: 22px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+}
+
+.modal-form-input {
+    background-color: #eee !important;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 12px;
+    @include border-radius(4px);
+    padding: 12px 15px;
+    width: 100%;
+}
+
+.modal-form-input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #eee inset;
+}
+
+.modal-form.form-append {
+    .left, .right {
+        display: block;
+        float: left;
+    }
+    .right {
+        float: right;
+    }
+    a {
+        color: $ticket-item-bg;
+        font-size: 13px;
+    }
+}
+
+.modal-overlay {
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+
+    @include background-image(linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%));
+
+}
+
+@media only screen and (max-width: 800px) {
+    .modal {
+        left: 0;
+        right: 0;
+        top: 0;
+        width: 100% !important;
+        height: 100% !important;
+
+        input,
+        .button {
+            font-size: 14px;
+        }
+    }
+}

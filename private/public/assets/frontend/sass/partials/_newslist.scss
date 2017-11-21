@@ -1,0 +1,294 @@
+@import "base";
+
+#main {
+
+    .read-notification {
+        display: none;
+    }
+
+    .newslist-media {
+        width: 30%;
+        float: right;
+    }
+
+    .newsmedia-item {
+        background: $almost-white;
+        border: 1px solid $table-border-grey;
+        box-sizing: border-box;
+        padding: 15px;
+        margin-bottom: 2em;
+
+        a {
+            text-decoration: none;
+            color: #2a2a2a;
+        }
+
+        h3 {
+            color: $left-nav-bg;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .date {
+            display: block;
+            border-top: 1px solid $table-border-grey;
+            padding-top: 1em;
+        }
+    }
+
+    .newslist {
+        width: 66%;
+        float: left;
+
+        &.singleitem {
+
+            .content {
+
+                .more-btn {
+                    float: left;
+                }
+            }
+            
+            &.read .read-notification {
+                background: $dark-red-bg;
+                bottom: 1rem;
+                color: #fff;
+                display: inline-block;
+                position: absolute;
+                right: 0;
+                white-space: nowrap;
+
+                .fa {
+                    vertical-align: sub;
+                }
+            }
+
+            article.newsitem {
+                float: left;
+                width: 100%;
+                border-bottom: none;
+            }
+        }
+    }
+
+    .newsitem {
+        padding: 2em 0;
+        border-bottom: 1px solid $table-border-grey;
+        position: relative;
+
+        .socialmedia {
+            float: left;
+            clear: both;
+        }
+
+        // Has been read
+        &.read {
+            background: $almost-white;
+            border-bottom: 1px solid $white;
+
+            .read-notification {
+                background: $dark-red-bg;
+                color: #fff;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                text-transform: uppercase;
+                // font-family: 'MontserratSemiBold';
+                height: 30px;
+                padding: 0 15px;
+
+                i {
+                    font-size: 16px;
+                    line-height: 20px;
+                    margin-right: 5px;
+                }
+
+                &-text {
+                    line-height: 30px;
+                    font-size: 13px;
+                }
+            } 
+        }
+
+        .logo {
+            float: left;
+            margin-right: 2em;
+        }
+
+        a.logo {
+            display: block;
+            width: 60px;
+            height: 60px;
+            background: no-repeat center center;
+            background-size: contain;
+            background-color: #fff;
+        }
+
+        .head {
+            padding: 0;
+        }
+
+        .head-content {
+            padding-top: .75em;
+            font-weight: 600;
+
+            img {
+                vertical-align: middle;
+                display: inline-block;
+                padding: 0 .25em;
+                margin-top: -3px;
+                max-width: 16px;
+                max-height: 16px;
+
+            }
+        }
+
+        h3 {
+            padding-top: .25em;
+            color: $left-nav-bg;
+
+            a, 
+            a:hover,
+            a:visited, 
+            a:active, 
+            a:focus {
+                color: $left-nav-bg !important;
+                text-decoration: none !important;
+            }
+        }
+
+        .more-btn {
+            color: $left-nav-bg;
+            margin-top: 1rem;
+        }
+
+        p {
+            line-height: 21px;
+            font-size: 14px;
+        }
+
+        .media {
+
+            img {
+                display: block;
+                margin: 2em auto 1em;
+                max-width: 100%;
+            }
+        }
+
+        .content {
+            position: relative;
+            margin-top: 10px;
+        }
+
+        .content a {
+            font-size: 14px;
+            color: $left-nav-bg;
+        }
+
+        // hide read notiification from normal view
+        .read-notification {
+            display: none;
+        }
+
+        .admin-edit {
+            color: #333 !important;
+            text-decoration: none !important;
+        }
+
+        .admininfo {
+            margin-top: 1em;
+            background: #f3f3f3;
+            padding: 1em;
+            box-sizing: border-box;
+        }
+    }
+
+    /*
+    .more-news-from,
+    .interesting-news,
+    .fav-news {
+        width: 66%;
+        float: left;
+        margin-bottom: 3em;
+        border-top: 1px solid $table-border-grey;
+
+        h3 {
+            margin-bottom: 1em;
+            text-transform: uppercase;
+        }
+
+        article {
+            width: 30%;
+            margin-right: 3%;
+            float: left;
+
+            h4 {
+                font-size: .95rem;
+                // font-family: 'MontserratSemiBold';
+                word-break: break-word;
+
+                a {
+                    color: #333;
+                    text-decoration: none;
+                }
+            }
+
+            p {
+                float: left;
+
+                a {
+                    color: $font-color;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .article-thmb {
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            background-color: #fff; 
+            display: block;
+            float: left;
+            height: 60px;
+            margin-right: 1em;
+            width: 60px;
+
+            img {
+                max-height: 100%;
+                width: 100%;
+                // background: #f3f3f3;
+            }
+
+            & + h4 {
+                float: left;
+                width: 60%;
+            }
+        }
+
+        .pre-headline {
+            display: block;
+            float: left;
+            width: 100%;
+            margin: 1em 0;
+            font-size: 10px;
+
+            img {
+                vertical-align: middle;
+            }
+
+            &.mobile {
+                display: none;
+            }
+
+            img {
+                vertical-align: middle;
+                width: 14px;
+            }
+        }
+    }
+    */
+}

@@ -1,0 +1,146 @@
+.tournaments {
+    margin-bottom: 2em;
+
+    .header {
+        margin-left: 0;
+        padding-left: 0;
+
+        li {
+            float: left;
+            display: block;
+            margin-left: 0;
+            margin-right: 10px;
+
+            &.active a {
+                background: #262626;
+                color: #fff;
+            }
+
+            a {
+                text-decoration: none;
+                color: #2a2a2a;
+                background: #f3f3f3;
+                display: block;
+                padding: 0 10px;
+                line-height: 3em;
+            }
+        }
+    }
+
+    .tournament {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+
+        .player-item {
+            &.header {
+                border-bottom: 1px solid #aaa;
+            }
+
+            &.odd {
+                background: #f3f3f3;
+            }
+
+            div {
+                float: left;
+                box-sizing: border-box;
+                padding: .5em 1em;
+                border-right: 1px solid #e3e3e3;
+                line-height: 3em;
+
+                img {
+                    vertical-align: middle;
+                }
+
+                &.name {
+                    width: 43%;
+                }
+
+                &.shirt {
+                    width: 7%;
+                    text-align: center;
+                }
+
+                &.birthday {
+                    width: 15%;
+                }
+
+                &.yellows {
+                    width: 7%;
+                    text-align: center;
+                }
+
+                &.reds {
+                    width: 7%;
+                    text-align: center;
+                }
+
+                &.outs {
+                    width: 7%;
+                    text-align: center;
+                }
+
+                &.games {
+                    width: 7%;
+                    text-align: center;
+                }
+
+                &.goals {
+                    width: 7%;
+                    text-align: center;
+                }
+
+                &:last-child {
+                    border-right: 1px solid transparent;
+                }
+            ;
+            }
+
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 1030px) {
+    .tournaments .tournament .player-item div {
+        font-size: .8em;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .tournaments .tournament .player-item div {
+        &.birthday {
+            display: none;
+        }
+        &.name {
+            width: 58%;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .tournaments .tournament .player-item div {
+        font-size: .65em;
+
+        width: 9% !important;
+
+        &.name {
+            width: 46% !important;
+        }
+
+        img {
+            max-width: 180%;
+        }
+    }
+
+    .tournaments .header {
+        font-size: .8em;
+
+        li {
+            margin-bottom: 8px;
+        }
+    }
+}

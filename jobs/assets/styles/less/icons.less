@@ -1,0 +1,137 @@
+// ICONS
+.icon {
+	width: 48px;
+	height: 48px;
+	background-color: #fff;
+	background-position: center center;
+	background-repeat: no-repeat;
+	border-radius: 50px;
+	border: 2px solid @secondary-color;
+	z-index: 10;
+	transition: all 0.2s ease-in;
+}
+
+.icon-dark {
+	width: 48px;
+	height: 48px;
+	background-color: @main-color;
+	background-position: center center;
+	background-repeat: no-repeat;
+	border-radius: 50px;
+	z-index: 10;
+	// border: 2px solid @secondary-color
+	transition: all 0.2s ease-in;
+}
+
+.icon-chev-down {
+	.icon();
+	background-image: url('../img/icons/chev-down.png');
+	background-position: center -26px;
+	border: 2px solid #fff;
+	margin: 10px auto 0;
+
+	&:hover {
+		background-color: @main-color;
+		background-position: center 6px;
+		border-color: #fff;
+	}
+}
+
+.icon-chev-up {
+	.icon();
+	background-image: url('../img/icons/chev-up.png');
+	background-position: center 2px;
+	border: 2px solid #fff;
+	margin: 10px auto 0;
+
+	&:hover {
+		background-color: @main-color;
+		background-position: center -30px;
+		border-color: #fff;
+	}
+}
+
+.icon-up {
+	.icon-dark();
+	width: 16px;
+	height: 16px;
+	background-image: url('../img/icons/arrow-down.png');
+	margin: 0 auto;
+	background-position: 14px 12px;
+}
+
+.icon-down {
+	.icon-dark();
+	background-image: url('../img/icons/arrow-down.png');
+	margin: 0 auto;
+	background-position: 14px 12px;
+}
+
+.icon-chev-left {
+	.icon();
+	background-image: url('../img/icons/chev-left.png');
+	background-position: center;
+	width: 48px;
+	heigth: 48px;
+}
+
+.icon-chev-right {
+	.icon();
+	background-image: url('../img/icons/chev-right.png');
+	background-position: 13px 7px;
+}
+
+.icon-cut {
+	.icon-dark();
+	background-image: url('../img/icons/cut.png');
+	//background-position: 13px 7px;
+	margin: 0 auto;
+}
+
+.icon-attention {
+	.icon-dark();
+	background-image: url('../img/icons/attention.png');
+	//background-position: 13px 7px;
+	margin: 0 auto;
+}
+
+.icon-attention-red {
+	.icon();
+	background-image: url('../img/icons/attention-red.png');
+	//background-position: 13px 7px;
+	position: absolute;
+	width: 64px;
+	height: 64px;
+}
+
+.icon-arrow-right {
+	.icon();
+	background-image: url('../img/icons/arrow-right.png');
+	border-radius: 50px;
+	bottom: 50%;
+	height: 64px;
+	margin: 0 auto;
+	position: absolute;
+	right: -45px;
+	width: 64px;
+	z-index: 90;
+}
+
+.icon-download {
+	.icon ();
+	width: 32px;
+	height: 32px;
+	background-image: url('../img/icons/arrow-down.png');
+	background-position: center -22px;
+	background-color: #fff;
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	border: 2px solid @main-color;
+
+	&:hover {
+		background-color: @main-color;
+		border-color: #fff;
+		background-position: center 2px;
+	}
+}

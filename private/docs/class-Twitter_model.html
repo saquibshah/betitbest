@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Twitter_model</title>
+
+	<link rel="stylesheet" href="resources/style.css?c2f33731c1948fbed7c333554678bfa68d4817da">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Packages</h3>
+			<ul>
+				<li>
+					<a href="package-BIBSN.html">
+						BIBSN<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-BIBSN.Controllers.html">
+						Controllers<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-BIBSN.Controllers.Backend.html">
+						Backend					</a>
+
+						</li>
+				<li>
+					<a href="package-BIBSN.Controllers.Cli.html">
+						Cli					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="package-BIBSN.Core.html">
+						Core					</a>
+
+						</li>
+				<li>
+					<a href="package-BIBSN.Libraries.html">
+						Libraries					</a>
+
+						</li>
+				<li>
+					<a href="package-BIBSN.Migrations.html">
+						Migrations					</a>
+
+						</li>
+				<li>
+					<a href="package-BIBSN.Models.html">
+						Models<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-BIBSN.Models.Backend.html">
+						Backend					</a>
+
+						</li>
+				<li>
+					<a href="package-BIBSN.Models.Cli.html">
+						Cli					</a>
+
+						</li>
+							</ul></li></ul></li>
+				<li>
+					<a href="package-None.html">
+						None					</a>
+
+						</li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Categorization_model.html">Categorization_model</a></li>
+				<li class="active"><a href="class-Twitter_model.html">Twitter_model</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+<span>Package</span>			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Twitter_model</h1>
+
+
+	<div class="description">
+	<p>Class Twitter_model</p>
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+CI_Model
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>Twitter_model</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		<b>Package:</b> <a href="package-BIBSN.html">BIBSN</a>\<a href="package-BIBSN.Models.html">Models</a>\<a href="package-BIBSN.Models.Cli.html">Cli</a><br>
+
+			<b>Located at</b> <a href="source-class-Twitter_model.html#3-151" title="Go to source code">models/cli/twitter_model.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="updateTweets" id="_updateTweets">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_updateTweets">#</a>
+		<code><a href="source-class-Twitter_model.html#12-95" title="Go to source code">updateTweets</a>( )</code>
+
+		<div class="description short">
+			<p>Updates Twitter-tweets.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Updates Twitter-tweets.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTweetsFrom" id="_getTweetsFrom">
+
+		<td class="attributes"><code>
+			 protected 
+
+			boolean|object
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTweetsFrom">#</a>
+		<code><a href="source-class-Twitter_model.html#97-131" title="Go to source code">getTweetsFrom</a>( <span>string|integer <var>$user</var></span>, <span>integer <var>$limit</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$user</var></dt>
+					<dd></dd>
+					<dt><var>$limit</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean|object<br><p>Generic function to retrieve tweets
+Will be called from other functions in this class</p>
+				</div>
+
+
+				<h4>See</h4>
+				<div class="list">
+						getTweetsFromUser()<br>
+						getTweetsFromUserWithId()<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="clearUtf" id="_clearUtf">
+
+		<td class="attributes"><code>
+			 protected 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_clearUtf">#</a>
+		<code><a href="source-class-Twitter_model.html#133-150" title="Go to source code">clearUtf</a>( <span>string <var>$string</var></span> )</code>
+
+		<div class="description short">
+			<p>Converts tweets-text to utf-8 chars and filters out unknown symbols.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Converts tweets-text to utf-8 chars and filters out unknown symbols.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$string</var></dt>
+					<dd>The text that should be filtered.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+	<table class="summary constants" id="constants">
+	<caption>Constants summary</caption>
+	<tr data-order="USER_AGENT" id="USER_AGENT">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-Twitter_model.html#8" title="Go to source code"><b>USER_AGENT</b></a>
+			</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#USER_AGENT" class="anchor">#</a>
+				<code><span class="php-quote">'Bet IT Best Sportnachrichten'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="MAX_TIMELINE_ITEMS" id="MAX_TIMELINE_ITEMS">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-Twitter_model.html#10" title="Go to source code"><b>MAX_TIMELINE_ITEMS</b></a>
+			</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#MAX_TIMELINE_ITEMS" class="anchor">#</a>
+				<code><span class="php-num">50</span></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

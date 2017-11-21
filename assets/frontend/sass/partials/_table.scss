@@ -1,0 +1,279 @@
+.table {
+    margin-bottom: 2em;
+
+    .header {
+        margin-left: 0;
+        padding-left: 0;
+
+        li {
+            float: left;
+            display: block;
+            margin-left: 0;
+            margin-right: 10px;
+
+            &.active a {
+                background: #262626;
+                color: #fff;
+            }
+
+            a {
+                text-decoration: none;
+                color: #2a2a2a;
+                background: #f3f3f3;
+                display: block;
+                padding: 0 10px;
+                line-height: 3em;
+            }
+        }
+    }
+
+    .table-group {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+    }
+}
+
+.table-row {
+
+    border-bottom: 1px solid #e3e3e3;
+    clear: left;
+
+    div {
+        float: left;
+        box-sizing: border-box;
+        padding: .5em 1em;
+        border-right: 1px solid #e3e3e3;
+        line-height: 3em;
+
+        &:last-child {
+            border-right: 1px solid transparent;
+        }
+
+        &.position {
+            width: 10%;
+            text-align: center;
+
+        }
+
+        &.change {
+            display: none;
+        }
+
+        &.logo {
+            border-right: 1px solid transparent;
+            width: 5%;
+
+            a {
+                display: block;
+                width: 3em;
+                height: 3em;
+                background: no-repeat center center;
+                background-size: contain;
+            }
+        }
+
+        &.name {
+            display: table;
+            width: 45%;
+
+            span {
+                display: table-cell;
+                vertical-align: middle;
+            }
+        }
+
+        &.games {
+            display: table;
+            width: 10%;
+            text-align: center;
+
+            span {
+                display: table-cell;
+                vertical-align: middle;
+            }
+        }
+        &.goals {
+            display: table;
+            width: 10%;
+            text-align: center;
+
+            span {
+                display: table-cell;
+                vertical-align: middle;
+            }
+        }
+        &.diff {
+            display: table;
+            width: 10%;
+            text-align: center;
+
+            span {
+                display: table-cell;
+                vertical-align: middle;
+            }
+        }
+        &.points {
+            display: table;
+            width: 10%;
+            text-align: center;
+
+            span {
+                display: table-cell;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    &.header .name {
+        width: 50%;
+    }
+
+    &.odd {
+        background-color: #f6f6f6;
+    }
+
+    &.active {
+        background-color: #8e1510 !important;
+        color: #fff;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .table-row div.logo a {
+        width: 2.5em;
+        height: 2.5em;
+        padding-top: .5em;
+    }
+}
+
+@media only screen and (max-width: 1030px) {
+    .table-row div {
+        font-size: .8em;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .table-row.header .name {
+        width: 46%;
+    }
+
+    .table-row div {
+        &.logo {
+            width: 10%;
+        }
+
+        &.name {
+            width: 36%;
+        }
+
+        &.diff {
+            width: 12%;
+        }
+    }
+}
+
+.livescores .match-item .result a {
+  color: $left-nav-bg;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 600px) {
+    .table-row.header {
+        div {
+            &.name, &.games, &.goals, &.diff, &.points {
+                line-height: 3em;
+            }
+        }
+
+        .name {
+            margin-left: 50px;
+            width: 35%;
+        }
+
+    }
+
+    .table-row {
+        &.table-row-tournamentname {
+            border-left: 1px solid transparent;
+            border-right: 1px solid transparent;
+        }
+
+        div {
+            font-size: .75em;
+            height: 4em;
+            overflow: hidden;
+
+            &.position {
+                width: 9%;
+            }
+
+            &.logo {
+                width: 50px;
+            }
+
+            &.name {
+                padding-left: 0;
+                width: 35%;
+                line-height: 1.5em;
+            }
+
+            &.games, &.goals {
+                width: 12%;
+            }
+
+            &.diff {
+                width: 10%;
+            }
+
+            &.points {
+                width: 10%;
+            }
+
+            &.games, &.goals, &.diff, &.points {
+                line-height: 1.5em;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .table-row.header {
+        .name {
+            margin-left: 38px;
+        }
+    }
+
+    .table-row {
+        div {
+            padding-left: 0.5em;
+            padding-right: 0.5em;
+            font-size: .6em;
+            height: 4em;
+            overflow: visible;
+
+            &.logo {
+                width: 38px;
+            }
+
+            &.name span {
+                line-height: 1.5em;
+            }
+
+            &.games, &.goals {
+                width: 16%;
+            }
+
+            &.diff {
+                display: none;
+            }
+
+            &.points {
+                width: 13%;
+            }
+        }
+    }
+}

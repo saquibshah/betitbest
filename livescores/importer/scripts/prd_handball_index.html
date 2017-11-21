@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>BIB Livescores</title>
+<link media="all" href="https://www.betitbest.com/dev/stefan/nico.css" type="text/css" rel="stylesheet"></link>
+<script type="text/javascript" src="jquery-1.9.1.js"></script>
+<script type="text/javascript">
+    /*function updateLoop(){
+            $("#updateElement").load('livescoreout.php', function (){
+                setTimeout(updateLoop(),3000);
+            });
+        })();*/
+    
+$(document).ready(function() {
+    function initial_load_bnc(){
+		$('#updateElement').load('prd_handball_livescoreout.php');
+	}
+	initial_load_bnc();
+	
+	load_bnc();
+	
+	$( "#closematchapp" ).click(function() {
+			$("#hiermatchapp").attr("src", 'about:blank').hide();
+			$("#wrapclose").hide();
+			//$( "#Bundesliga2" ).toggle();
+			  //$( "#matchdate").toggle();
+			  //$( "#matchrow").toggle();
+			  
+			});
+			
+	
+    function load_bnc() {
+        $('#updateElement').load('prd_handball_livescoreout.php', function() {
+            setTimeout(function() {
+                load_bnc();
+            }, 15000);
+        });
+    }
+	
+    //load_bnc();
+});
+	
+	/*function contentDisp()
+{
+$.ajax({
+url : "livescore.php",
+success : function (data) {
+$("#updateElement").html(data);
+setTimeout(contentDisp(),50000);
+}
+});
+}*/
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53398772-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body style="margin:0px;min-height:150px;">
+
+    <!--<h1>Automatisches Update Beispiel</h1>
+    <h2>Aktuelle Uhrzeit:</h2>-->
+    <div id="wrapper" style="width:500px;background-color:white;height:100%;min-height:150px;">
+	<div id="updateElement" style="position:absolute;left:0px;top:0px;background-color:grey;min-height:150px;">
+	</div>
+	<!--<div id="hiermatchapp" style="position:absolute;top:400px;left:400px;width:200px;height:200px;background-color:red;z-index:10"></div>-->
+	<iframe style="width:310px;height:280px;border:0px;position:absolute;left:-200px;top:20px;display:none;" id="hiermatchapp"></iframe>
+	<div id="wrapclose" style="position:absolute;left:0px;top:0px;height:24px;width:320px;background-color:grey;display:none;text-align:center;color:#EEE;background:none repeat scroll 0% 0% rgb(122,125,130) !important;font-size:14px;">
+	<a id="closematchapp" href="#">[x] close</a></div>
+	
+	
+	</div>
+	
+	
+	
+	
+		<link media="all" href="css/component.css" type="text/css" rel="stylesheet"></link>
+			<link rel="stylesheet" type="text/css" href="css/default.css" />
+			<link rel="stylesheet" type="text/css" href="css/component.css" />
+			<script src="js/modernizr.custom.js"></script>
+
+			<div id="dl-menu" class="dl-menuwrapper" style="position:absolute;left:358px;top:0px;">
+			<button>Open <a href="">Menu</a></button>
+			<ul class="dl-menu">
+			<li> <a href="prd_soccer_index.html" style="border-bottom:1px solid white;"> <img src= menulogos/Vektor_Fussball.png style="position:absolute;left:120px;bottom:8px;height:36px;width:24px;"> Fussball</a>
+			</li>
+			<li> <a href="prd_tennis_index.html" style="border-bottom:1px solid white;"> <img src= menulogos/Vektor_Tennis.png style="position:absolute;left:114px;bottom:8px;height:36px;width:36px;"> Tennis</a>
+			</li>
+			<li> <a href="prd_handball_index.html" style="border-bottom:1px solid white;"> <img src= menulogos/Vektor_Handball.png style="position:absolute;left:120px;bottom:8px;height:36px;width:24px;"> Handball</a>
+			</li>
+			<li> <a href="prd_volleyball_index.html" style="border-bottom:1px solid white;"> <img src= menulogos/Vektor_Volleyball.png style="position:absolute;left:111px;bottom:8px;height:36px;width:42px;"> Volleyball</a>
+			</li>
+			<li> <a href="prd_football_index.html" style="border-bottom:1px solid white;"> <img src= menulogos/Vektor_Football.png style="position:absolute;left:117px;bottom:8px;height:36px;width:30px;"> Football</a>
+			</li>
+			<li> <a href="prd_basketball_index.html" style="border-bottom:1px solid white;"> <img src= menulogos/Vektor_Basketball.png style="position:absolute;left:114px;bottom:8px;height:36px;width:36px;"> Basketball</a>
+			</li>
+			<li> <a href="prd_ice_hockey_index.html"> <img src= menulogos/Vektor_Eishockey.png style="position:absolute;left:113px;bottom:8px;height:36px;width:38px;"> Eishockey</a>
+			</li>
+			
+			</ul>
+			</div>
+
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+			<script src="js/jquery.dlmenu.js"></script>
+
+			<script>
+			$(function() {
+				$( '#dl-menu' ).dlmenu();
+			});
+			</script>
+			
+			
+	
+</body>
+</html>

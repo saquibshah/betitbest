@@ -1,0 +1,73 @@
+/* here you can put your own css to customize and override the theme */
+
+
+.add_nav_item ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.add_nav_item ul li {
+	margin: 0;
+}
+
+.add_nav_item ul li input {
+	float: left;
+	display: block;
+}
+
+.add_nav_item ul li label {
+	display: block;
+	padding-left: 20px;
+}
+
+.add_nav_item .height-50p {
+	overflow-y: scroll;
+}
+
+.dataTables_wrapper:after {
+	display: block;
+	content: " ";
+	height: 2em;
+	clear: both;
+}
+
+.smallTable td,
+.smallTable th {
+	font-size: .75em !important;
+	line-height: 1.33em !important;
+	vertical-align: middle !important;
+}
+
+.table-container .dataTables_wrapper .dataTables_length {
+	margin-left: 10px !important;
+}
+
+a.subtext {
+	color: #000 !important;
+	text-decoration: none !important;
+}
+
+a.subtext.help {
+	cursor: help;
+}
+
+.margin-bottom button {
+	margin-bottom: 10px;
+}
+
+#newKeyword {
+	cursor: pointer;
+}
+
+.greytext {
+	color: #aaa !important;
+}
+
+.badge.badge-default.greytext {
+	background-color: #e5e5e5 !important;
+}
+
+td.grey {
+	color: #bbb !important;
+}

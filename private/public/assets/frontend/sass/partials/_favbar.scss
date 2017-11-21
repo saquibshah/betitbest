@@ -1,0 +1,124 @@
+@import 'compass/css3/transition';
+@import 'compass/css3/box-shadow';
+@import 'compass/css3/border-radius';
+@import 'base';
+
+#favbar {
+    @include transition-property(all);
+    @include transition-duration(.5s);
+    @include transition-timing-function(ease-in-out);
+    @include font-smoothing();
+
+    background: $ticket-bg;
+    bottom: 0;
+    color: $white;
+    // font-family: Montserrat, sans-serif;
+    font-weight: 300;
+    margin-bottom: 42px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: $ticket-width;
+    z-index: 50;
+
+    &.offCanvas {
+        right: (($sidebar-open-width) - ($sidebar-width)) * (-1);
+    }
+
+    .wrap > .body {
+        padding: 20px;
+        text-align: center;
+
+        h4,
+        h6 {
+            // font-family: Montserrat, sans-serif;
+            font-size: 1.7em;
+            font-weight: 300;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+        }
+
+        h4 {
+            margin-bottom: 1em;
+        }
+
+        h6 {
+            background: url('../images/ticket-bettype-indicator.png') -210px bottom no-repeat;
+            border-top: 1px solid $grey-5;
+            font-size: 1.1em;
+            margin-bottom: 1em;
+            padding: 8px 0 1em;
+            text-transform: uppercase;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0 0 2em;
+            padding: 0;
+            text-align: left;
+        }
+
+        li {
+            background: $left-nav-bg;
+            font-size: 1em;
+            margin: .5em 0;
+            padding: .75em 1.75em .75em 2.5em;
+            position: relative;
+
+            i {
+                display: block;
+                left: 1em;
+                position: absolute;
+                top: .85em;
+            }
+
+            a {
+                color: $white;
+                text-decoration: none;
+
+                &.teamname {
+                    display: block;
+                    line-height: 2em;
+                    margin: -.375em 15px -.375em 0;
+                }
+
+                &.delete {
+                    //@include border-radius(.5em);
+                    //@include box-shadow(rgba(0, 0, 0, .2) 0 2px 3px inset);
+                    //@include font-smoothing(off);
+
+                    // background: $dark-red-bg;
+                    cursor: pointer;
+                    // display: block;
+                    // font-size: 1em;
+                    // height: 1.2em;
+                    // line-height: 1.05em;
+                    position: absolute;
+                    right: 35px;
+                    // text-align: center;
+                    // top: .8em;
+                    // width: 1.2em;
+                }
+            }
+        }
+
+        button {
+            @include border-radius(2em);
+
+            background: $left-nav-bg;
+            border: 0;
+            color: $white;
+            display: inline-block;
+            // font-family: MontserratBold, sans-serif;
+            font-size: 1em;
+            letter-spacing: .3px;
+            padding: .75em 1.25em;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+    }
+
+}

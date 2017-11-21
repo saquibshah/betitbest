@@ -1,0 +1,572 @@
+/* line 3, ../../sass/partials/_tennis.scss */
+#livescore-type-tenis .team-type1-info, #livescore-type-tenis div.team1-info, #livescore-type-tenis div.team2-info {
+  width: 100%;
+  border-left: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+  border-right: 1px solid #e3e3e3;
+  height: 60px;
+}
+/* line 10, ../../sass/partials/_tennis.scss */
+#livescore-type-tenis .team-type1-info img, #livescore-type-tenis div.team1-info img, #livescore-type-tenis div.team2-info img {
+  height: 40px;
+  margin: 5px;
+  width: 40px;
+}
+/* line 16, ../../sass/partials/_tennis.scss */
+#livescore-type-tenis .team-type1-info > div, #livescore-type-tenis div.team1-info > div, #livescore-type-tenis div.team2-info > div {
+  height: 60px;
+  line-height: 60px;
+}
+/* line 21, ../../sass/partials/_tennis.scss */
+#livescore-type-tenis .team-type1-tourname, #livescore-type-tenis .tourname, #livescore-type-tenis .match-date {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  border-left: 1px solid #e3e3e3;
+  border-right: 1px solid #e3e3e3;
+  border-top: 1px solid #e3e3e3;
+}
+@media (max-width: 560px) {
+  /* line 1, ../../sass/partials/_tennis.scss */
+  #livescore-type-tenis {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+}
+/* line 37, ../../sass/partials/_tennis.scss */
+#livescore-type-tenis div.match-item-m.odd {
+  background-color: #f3f3f3;
+}
+@media (max-width: 560px) {
+  /* line 36, ../../sass/partials/_tennis.scss */
+  #livescore-type-tenis div.match-item-m {
+    font-size: 11px;
+  }
+}
+/* line 44, ../../sass/partials/_tennis.scss */
+#livescore-type-tenis a.live_link {
+  text-decoration: none;
+  color: #000;
+}
+/* line 48, ../../sass/partials/_tennis.scss */
+#livescore-type-tenis .tourname {
+  background-color: #D8D6D6;
+  height: 40px;
+}
+/* line 54, ../../sass/partials/_tennis.scss */
+#livescore-type-tenis .tourname a {
+  line-height: 40px;
+}
+/* line 58, ../../sass/partials/_tennis.scss */
+#livescore-type-tenis .match-date {
+  width: 100%;
+}
+/* line 62, ../../sass/partials/_tennis.scss */
+#livescore-type-tenis div.header-info {
+  height: 30px;
+  width: 100%;
+  border: 1px solid #e3e3e3;
+}
+/* line 67, ../../sass/partials/_tennis.scss */
+#livescore-type-tenis div.header-info > div {
+  height: 30px;
+  line-height: 30px;
+}
+/* line 72, ../../sass/partials/_tennis.scss */
+#livescore-type-tenis div.header-info div.large-left:nth-child(1) > span {
+  top: 5px;
+}
+/* line 76, ../../sass/partials/_tennis.scss */
+#livescore-type-tenis div.team1-info {
+  border-bottom: none;
+}
+@media (max-width: 560px) {
+  /* line 76, ../../sass/partials/_tennis.scss */
+  #livescore-type-tenis div.team1-info {
+    height: 40px;
+  }
+  /* line 82, ../../sass/partials/_tennis.scss */
+  #livescore-type-tenis div.team1-info img {
+    height: 30px;
+    margin: 5px;
+    width: 30px;
+  }
+  /* line 86, ../../sass/partials/_tennis.scss */
+  #livescore-type-tenis div.team1-info img:nth-child(2) {
+    margin-top: 10px !important;
+  }
+  /* line 91, ../../sass/partials/_tennis.scss */
+  #livescore-type-tenis div.team1-info > div {
+    height: 40px;
+    line-height: 40px;
+  }
+  /* line 96, ../../sass/partials/_tennis.scss */
+  #livescore-type-tenis div.team1-info > div.large-left:nth-child(3) img {
+    margin-top: 10px !important;
+  }
+}
+@media (max-width: 560px) {
+  /* line 105, ../../sass/partials/_tennis.scss */
+  #livescore-type-tenis div.team2-info {
+    height: 40px;
+  }
+  /* line 109, ../../sass/partials/_tennis.scss */
+  #livescore-type-tenis div.team2-info img {
+    height: 30px;
+    margin: 5px;
+    width: 30px;
+  }
+  /* line 115, ../../sass/partials/_tennis.scss */
+  #livescore-type-tenis div.team2-info > div {
+    height: 40px;
+    line-height: 40px;
+  }
+  /* line 120, ../../sass/partials/_tennis.scss */
+  #livescore-type-tenis div.team2-info > div.large-left:nth-child(3) img {
+    margin-top: 10px !important;
+  }
+}
+/* line 129, ../../sass/partials/_tennis.scss */
+#livescore-type-tenis div.large-left {
+  float: left;
+  text-indent: 10px;
+  font-weight: bold;
+}
+/* line 135, ../../sass/partials/_tennis.scss */
+#livescore-type-tenis div.large-left span img {
+  top: -6px !important;
+}
+@media (max-width: 800px) {
+  /* line 141, ../../sass/partials/_tennis.scss */
+  #livescore-type-tenis div.large-left:nth-child(2) {
+    width: 150px;
+    padding: 0px 5px;
+    height: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+@media (max-width: 560px) {
+  /* line 129, ../../sass/partials/_tennis.scss */
+  #livescore-type-tenis div.large-left {
+    text-indent: 0px;
+  }
+  /* line 152, ../../sass/partials/_tennis.scss */
+  #livescore-type-tenis div.large-left:nth-child(2) {
+    height: 40px;
+    width: 90px;
+  }
+  /* line 158, ../../sass/partials/_tennis.scss */
+  #livescore-type-tenis div.large-left span img {
+    top: -7px !important;
+  }
+}
+/* line 165, ../../sass/partials/_tennis.scss */
+#livescore-type-tenis div.small-right {
+  float: right;
+  width: 30px;
+  text-align: center;
+  border-left: 1px solid #e3e3e3;
+}
+@media (max-width: 560px) {
+  /* line 165, ../../sass/partials/_tennis.scss */
+  #livescore-type-tenis div.small-right {
+    font-size: 11px;
+    width: 15px;
+  }
+}
+/* line 176, ../../sass/partials/_tennis.scss */
+#livescore-type-tenis a.tournament_filter {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* line 181, ../../sass/partials/_tennis.scss */
+#livescore-type-tenis a.tournament_filter:hover {
+  color: #8e1510 !important;
+  font-weight: bold;
+}
+@media (max-width: 560px) {
+  /* line 176, ../../sass/partials/_tennis.scss */
+  #livescore-type-tenis a.tournament_filter {
+    font-size: 12px;
+    display: block;
+  }
+}
+
+/* line 1, ../../sass/partials/_soccers.scss */
+#livescore-type-soccer {
+  padding: 0px 5px !important;
+}
+/* line 2, ../../sass/partials/_soccers.scss */
+#livescore-type-soccer .extend-score-ratio, #livescore-type-soccer div.match-item .team1 span.score-ratio, #livescore-type-soccer div.match-item .team2 span.score-ratio {
+  position: absolute !important;
+  top: 50% !important;
+  display: block !important;
+  margin-top: -11px !important;
+  width: 14% !important;
+}
+@media (max-width: 500px) {
+  /* line 2, ../../sass/partials/_soccers.scss */
+  #livescore-type-soccer .extend-score-ratio, #livescore-type-soccer div.match-item .team1 span.score-ratio, #livescore-type-soccer div.match-item .team2 span.score-ratio {
+    position: absolute;
+    top: 50%;
+    margin-top: -7%;
+    min-width: 10px;
+    text-align: center !important;
+    width: 15%;
+  }
+}
+/* line 22, ../../sass/partials/_soccers.scss */
+#livescore-type-soccer div.match-list-items .name-team {
+  display: block;
+  width: 86% !important;
+  line-height: 22px;
+  text-align: center;
+  position: relative !important;
+}
+@media (max-width: 700px) {
+  /* line 22, ../../sass/partials/_soccers.scss */
+  #livescore-type-soccer div.match-list-items .name-team {
+    line-height: 15px;
+  }
+}
+@media (max-width: 500px) {
+  /* line 22, ../../sass/partials/_soccers.scss */
+  #livescore-type-soccer div.match-list-items .name-team {
+    line-height: normal;
+    width: 85% !important;
+  }
+}
+/* line 37, ../../sass/partials/_soccers.scss */
+#livescore-type-soccer div.match-list-items .score-ratio {
+  display: block;
+  width: 100%;
+  text-align: center;
+  line-height: 22px;
+  font-weight: bold;
+}
+/* line 48, ../../sass/partials/_soccers.scss */
+#livescore-type-soccer .match-header div.match {
+  width: 60%;
+}
+@media (max-width: 1000px) {
+  /* line 54, ../../sass/partials/_soccers.scss */
+  #livescore-type-soccer .match-header div.date {
+    width: 8%;
+  }
+}
+/* line 59, ../../sass/partials/_soccers.scss */
+#livescore-type-soccer div.match-item {
+  height: 6em;
+}
+@media (max-width: 500px) {
+  /* line 59, ../../sass/partials/_soccers.scss */
+  #livescore-type-soccer div.match-item {
+    position: relative;
+    height: 110px !important;
+  }
+  /* line 66, ../../sass/partials/_soccers.scss */
+  #livescore-type-soccer div.match-item div.tournament {
+    clear: none;
+    float: right;
+    width: 40px;
+    font-weight: bold;
+    text-align: right;
+    border-left: none;
+    border-bottom: none;
+    width: 165px;
+    font-size: 11px;
+    height: auto !important;
+    min-height: 30px;
+  }
+  /* line 78, ../../sass/partials/_soccers.scss */
+  #livescore-type-soccer div.match-item div.tournament a {
+    font-weight: bold !important;
+    line-height: 15px;
+  }
+  /* line 83, ../../sass/partials/_soccers.scss */
+  #livescore-type-soccer div.match-item div.tournament strong.mobile {
+    display: none;
+  }
+  /* line 87, ../../sass/partials/_soccers.scss */
+  #livescore-type-soccer div.match-item div.tournament span.table-cell {
+    display: block;
+  }
+}
+/* line 93, ../../sass/partials/_soccers.scss */
+#livescore-type-soccer div.match-item div {
+  height: 5em;
+}
+/* line 95, ../../sass/partials/_soccers.scss */
+#livescore-type-soccer div.match-item div.match {
+  border-right: 1px solid #e3e3e3;
+  width: 60%;
+  height: 100%;
+}
+@media (max-width: 500px) {
+  /* line 95, ../../sass/partials/_soccers.scss */
+  #livescore-type-soccer div.match-item div.match {
+    width: 100%;
+    border-bottom: none;
+    border-right: none;
+  }
+}
+@media (max-width: 1000px) {
+  /* line 108, ../../sass/partials/_soccers.scss */
+  #livescore-type-soccer div.match-item div.date {
+    width: 8%;
+    font-size: 1em;
+
+  }
+}
+/* line 113, ../../sass/partials/_soccers.scss */
+#livescore-type-soccer div.match-item span.divider {
+  line-height: 2.4em !important;
+  margin-top: 15px !important;
+  height: 0px !important;
+}
+@media (max-width: 676px) {
+  /* line 113, ../../sass/partials/_soccers.scss */
+  #livescore-type-soccer div.match-item span.divider {
+    margin-top: 10px !important;
+  }
+}
+@media (max-width: 500px) {
+  /* line 113, ../../sass/partials/_soccers.scss */
+  #livescore-type-soccer div.match-item span.divider {
+    margin-top: 12px !important;
+    border-right: none;
+    margin-top: 2px !important;
+    line-height: 5em !important;
+  }
+  /* line 126, ../../sass/partials/_soccers.scss */
+  #livescore-type-soccer div.match-item span.divider > span {
+    display: block !important;
+    position: absolute;
+    left: 0px;
+    line-height: 4.5em !important;
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+    top: 35px;
+  }
+}
+/* line 139, ../../sass/partials/_soccers.scss */
+#livescore-type-soccer div.match-item .team1 {
+  position: relative;
+}
+/* line 142, ../../sass/partials/_soccers.scss */
+#livescore-type-soccer div.match-item .team1 span.score-ratio {
+  right: 0px !important;
+  padding-right: 3px !important;
+}
+@media (max-width: 500px) {
+  /* line 139, ../../sass/partials/_soccers.scss */
+  #livescore-type-soccer div.match-item .team1 {
+    position: relative;
+  }
+  /* line 151, ../../sass/partials/_soccers.scss */
+  #livescore-type-soccer div.match-item .team1 .score-ratio {
+    right: 0px;
+  }
+}
+/* line 156, ../../sass/partials/_soccers.scss */
+#livescore-type-soccer div.match-item .team2 {
+  position: relative;
+}
+/* line 159, ../../sass/partials/_soccers.scss */
+#livescore-type-soccer div.match-item .team2 span.score-ratio {
+  left: 0px !important;
+  padding-left: 3px !important;
+}
+@media (max-width: 500px) {
+  /* line 156, ../../sass/partials/_soccers.scss */
+  #livescore-type-soccer div.match-item .team2 {
+    position: relative;
+  }
+  /* line 168, ../../sass/partials/_soccers.scss */
+  #livescore-type-soccer div.match-item .team2 .score-ratio {
+    left: 0px;
+  }
+}
+/* line 175, ../../sass/partials/_soccers.scss */
+#livescore-type-soccer div.match-item div.date span.d-m, #livescore-type-soccer div.match-item div.date span.t-m {
+  display: block;
+  line-height: 20px;
+  width: 100%;
+}
+/* line 182, ../../sass/partials/_soccers.scss */
+#livescore-type-soccer div.match-item div.date span.small-separate {
+  display: none;
+}
+@media (max-width: 500px) {
+  /* line 173, ../../sass/partials/_soccers.scss */
+  #livescore-type-soccer div.match-item div.date {
+    height: 40px;
+    border-right: none !important;
+    border-bottom: none !important;
+    float: left !important;
+    font-weight: bold;
+    text-align: left;
+    font-size: 11px;
+    width: 120px;
+    height: auto !important;
+    min-height: 30px;
+  }
+  /* line 199, ../../sass/partials/_soccers.scss */
+  #livescore-type-soccer div.match-item div.date span.d-m, #livescore-type-soccer div.match-item div.date span.t-m {
+    display: inline;
+    width: auto !important;
+  }
+  /* line 204, ../../sass/partials/_soccers.scss */
+  #livescore-type-soccer div.match-item div.date span.small-separate {
+    display: inline;
+    padding-left: 3px;
+    padding-right: 3px;
+    line-height: 20px;
+  }
+}
+/* line 214, ../../sass/partials/_soccers.scss */
+#livescore-type-soccer div.match-item a.live_link {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #000;
+}
+@media (max-width: 500px) {
+  /* line 214, ../../sass/partials/_soccers.scss */
+  #livescore-type-soccer div.match-item a.live_link {
+    position: absolute !important;
+    width: 100%;
+    height: 80px;
+    bottom: 0px;
+    left: 0px;
+    font-size: 11px;
+    display: block;
+  }
+}
+/* line 230, ../../sass/partials/_soccers.scss */
+#livescore-type-soccer .mfp-iframe-scaler iframe {
+  height: 92%;
+}
+/* line 233, ../../sass/partials/_soccers.scss */
+#livescore-type-soccer a.tournament_filter:hover {
+  color: #8e1510 !important;
+  font-weight: bold;
+}
+
+/* line 8, ../../sass/livescores.scss */
+.alone-team-nav {
+  cursor: pointer;
+  font-size: 15px;
+  height: 35px;
+  line-height: 34px;
+  padding: 10px 0px;
+  text-align: center;
+  width: 100%;
+  background-color: #262626;
+  font-family: Montserrat, sans-serif;
+  color: #FFF;
+}
+/* line 20, ../../sass/livescores.scss */
+.alone-team-nav > span {
+  background: #71110d;
+  display: inline-block;
+  padding: 0 10px;
+  text-transform: none;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+}
+/* line 29, ../../sass/livescores.scss */
+.alone-team-nav > span > b {
+  font-weight: 300;
+  padding-right: 10px;
+}
+/* line 34, ../../sass/livescores.scss */
+.alone-team-nav > span > i {
+  font-style: normal;
+}
+/* line 37, ../../sass/livescores.scss */
+.alone-team-nav > span > i:hover {
+  color: #AAA;
+}
+
+@media (max-width: 500px) {
+  /* line 47, ../../sass/livescores.scss */
+  #sectionnav li a {
+    font-size: 10px;
+  }
+
+  /* line 51, ../../sass/livescores.scss */
+  #langswitch {
+    font-size: 10px;
+  }
+}
+
+.divider{
+    border: 0 !important;
+}
+.name-team{
+    margin-top: 2em !important;
+    margin-right: 10% !important;
+}
+.logo{
+    width: 18% !important;
+}
+.team1, .team2{
+    width: 26% !important;
+    border-right: 0 !important;
+}
+.statistic{
+    font-size: 1.5em !important;
+    border-left: 1px solid #e3e3e3 !important;
+}
+.d-m{
+    display: none;
+}
+@media (max-width: 1400px) {
+    .statistic{
+        font-size: 1em;
+    }
+}
+@media (max-width: 1100px) {
+    .team1, .team2{
+        width: 25% !important;
+    }
+    .statistic{
+        width: 10% !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .team1, .team2{
+        width: 20% !important;
+    }
+    .statistic{
+        display: none !important;
+    }
+    .divider{
+        width: 22% !important;
+        display: table !important;
+    }
+    .status{
+    position: absolute;
+    bottom: 10% !important;
+    font-size: .7em !important;
+    }
+    .divider .d-m{
+        display: table-cell !important;
+        text-align: center;
+    }
+}
+
+@media (max-width:700px) and (min-width:500px) {
+    .score-ratio {
+        top: 20% !important;
+    }
+}​

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class MY_Controller</title>
+
+	<link rel="stylesheet" href="resources/style.css?c2f33731c1948fbed7c333554678bfa68d4817da">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Packages</h3>
+			<ul>
+				<li>
+					<a href="package-BIBSN.html">
+						BIBSN<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-BIBSN.Controllers.html">
+						Controllers<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-BIBSN.Controllers.Backend.html">
+						Backend					</a>
+
+						</li>
+				<li>
+					<a href="package-BIBSN.Controllers.Cli.html">
+						Cli					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="package-BIBSN.Core.html">
+						Core					</a>
+
+						</li>
+				<li>
+					<a href="package-BIBSN.Libraries.html">
+						Libraries					</a>
+
+						</li>
+				<li>
+					<a href="package-BIBSN.Migrations.html">
+						Migrations					</a>
+
+						</li>
+				<li>
+					<a href="package-BIBSN.Models.html">
+						Models<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-BIBSN.Models.Backend.html">
+						Backend					</a>
+
+						</li>
+				<li>
+					<a href="package-BIBSN.Models.Cli.html">
+						Cli					</a>
+
+						</li>
+							</ul></li></ul></li>
+				<li>
+					<a href="package-None.html">
+						None					</a>
+
+						</li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-MY_Config.html">MY_Config</a></li>
+				<li class="active"><a href="class-MY_Controller.html">MY_Controller</a></li>
+				<li><a href="class-MY_Lang.html">MY_Lang</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+<span>Package</span>			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class MY_Controller</h1>
+
+
+	<div class="description">
+	<p>Base-controller that should be extended by any non-cli controller.</p>
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+CI_Controller
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>MY_Controller</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		<b>Package:</b> <a href="package-BIBSN.html">BIBSN</a>\<a href="package-BIBSN.Core.html">Core</a><br>
+
+			<b>Located at</b> <a href="source-class-MY_Controller.html#5-50" title="Go to source code">core/MY_Controller.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-MY_Controller.html#18-28" title="Go to source code">__construct</a>( )</code>
+
+		<div class="description short">
+			<p>The constructor loads common models and libraries and loads the application-config.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>The constructor loads common models and libraries and loads the application-config.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="returnJson" id="_returnJson" class="deprecated">
+
+		<td class="attributes"><code>
+			 protected 
+
+			|string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_returnJson">#</a>
+		<code><a href="source-class-MY_Controller.html#30-49" title="Go to source code">returnJson</a>( <span>string|array|stdClass <var>$content</var></span>, <span>boolean <var>$return</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			<p>Displays json-content and sets correct headers etc.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Displays json-content and sets correct headers etc.</p>
+
+				<h4>Deprecated</h4>
+				<div class="list">
+						Use json-helper.<br>
+				</div>
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$content</var></dt>
+					<dd></dd>
+					<dt><var>$return</var></dt>
+					<dd>If false the method will exit</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					|string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary properties" id="magicProperties">
+	<caption>Magic properties summary</caption>
+	<tr data-order="ion_auth_model" id="m$ion_auth_model">
+		<td class="attributes"><code>
+			public  
+			<code><a href="class-Ion_auth_model.html">Ion_auth_model</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MY_Controller.html#11" title="Go to source code"><var>$ion_auth_model</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+	</tr>
+	<tr data-order="User" id="m$User">
+		<td class="attributes"><code>
+			public  
+			User_model
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MY_Controller.html#12" title="Go to source code"><var>$User</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Settings" id="m$Settings">
+		<td class="attributes"><code>
+			public  
+			<code><a href="class-Settings_model.html">Settings_model</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-MY_Controller.html#13" title="Go to source code"><var>$Settings</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

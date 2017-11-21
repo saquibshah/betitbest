@@ -1,0 +1,223 @@
+/* line 3, ../../sass/landingpage.scss */
+body {
+  color: #2a2a2a;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  margin: 0;
+}
+
+/* line 11, ../../sass/landingpage.scss */
+#main .startpage {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 45px 0;
+}
+/* line 16, ../../sass/landingpage.scss */
+#main .startpage h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+/* line 26, ../../sass/landingpage.scss */
+#main .startpage h3 {
+  color: #8e1510;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+/* line 34, ../../sass/landingpage.scss */
+#main .startpage img {
+  height: auto;
+  max-width: 100%;
+}
+/* line 39, ../../sass/landingpage.scss */
+#main .startpage ul {
+  padding-left: 15px;
+}
+/* line 44, ../../sass/landingpage.scss */
+#main .small-pagehead {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0;
+  padding: 0 0 10px 0;
+  text-transform: uppercase;
+}
+/* line 55, ../../sass/landingpage.scss */
+#main .center {
+  text-align: center;
+}
+/* line 59, ../../sass/landingpage.scss */
+#main .left {
+  float: left;
+  width: 50%;
+}
+/* line 64, ../../sass/landingpage.scss */
+#main .right {
+  float: right;
+  width: 40%;
+}
+
+/* line 70, ../../sass/landingpage.scss */
+.startpage.padding-bottom {
+  padding-bottom: 1em;
+}
+
+/* line 75, ../../sass/landingpage.scss */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+/* line 81, ../../sass/landingpage.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 87, ../../sass/landingpage.scss */
+.aboutus .redheadline {
+  color: #8e1510;
+}
+/* line 91, ../../sass/landingpage.scss */
+.aboutus h1 {
+  font-size: 14px;
+}
+
+/* line 96, ../../sass/landingpage.scss */
+.teaser-text {
+  box-sizing: border-box;
+  height: auto;
+  margin: 0 auto;
+  padding: 0 80px;
+  position: absolute;
+  top: 10em;
+  width: 100%;
+  z-index: 100;
+}
+/* line 106, ../../sass/landingpage.scss */
+.teaser-text .teaser-head {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4em;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 1.1em;
+  padding-top: 40px;
+  text-shadow: 0 0 15px black;
+  text-transform: uppercase;
+}
+/* line 118, ../../sass/landingpage.scss */
+.teaser-text .teaser-button {
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  background: #8e1510;
+  color: #fff;
+  display: inline-block;
+  font-size: 2em;
+  margin: 25px auto 0;
+  padding: 8px 30px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* line 133, ../../sass/landingpage.scss */
+.flexslider ul.slides li {
+  display: table-cell !important;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* line 139, ../../sass/landingpage.scss */
+.welovesports {
+  background: url(../images/welovesports-icon-black.png) no-repeat center;
+  background-size: contain;
+  display: block;
+  height: 65px;
+  margin: -20px auto 20px;
+  max-width: 30%;
+  width: 338px;
+}
+
+/* line 149, ../../sass/landingpage.scss */
+.padding section > div a {
+  text-decoration: none;
+}
+/* line 152, ../../sass/landingpage.scss */
+.padding section > div a.appstore-link > img {
+  height: 45px !important;
+}
+
+@media only screen and (max-width: 1500px) {
+  /* line 158, ../../sass/landingpage.scss */
+  .flexslider {
+    font-size: 8px;
+  }
+  /* line 161, ../../sass/landingpage.scss */
+  .flexslider .teaser-text {
+    top: 12em;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  /* line 168, ../../sass/landingpage.scss */
+  .flexslider .teaser-text {
+    top: 17em;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  /* line 174, ../../sass/landingpage.scss */
+  .flexslider {
+    font-size: 7px;
+  }
+  /* line 177, ../../sass/landingpage.scss */
+  .flexslider .teaser-text {
+    top: 6em;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* line 184, ../../sass/landingpage.scss */
+  .startpage.padding-bottom {
+    padding: 0 20px;
+  }
+
+  /* line 189, ../../sass/landingpage.scss */
+  #main .left {
+    float: none;
+    width: 100%;
+  }
+  /* line 194, ../../sass/landingpage.scss */
+  #main .right {
+    float: none;
+    width: 100%;
+  }
+  /* line 199, ../../sass/landingpage.scss */
+  #main .picture {
+    text-align: center;
+    margin-top: 2em;
+  }
+  /* line 203, ../../sass/landingpage.scss */
+  #main .picture img {
+    max-width: 50%;
+  }
+
+  /* line 209, ../../sass/landingpage.scss */
+  .flexslider {
+    margin: 0 -25%;
+    overflow: hidden;
+  }
+  /* line 210, ../../sass/landingpage.scss */
+  .flexslider ul.slides li .teaser-text {
+    top: 3em;
+  }
+  /* line 214, ../../sass/landingpage.scss */
+  .flexslider .teaser-text {
+    padding: 0 150px;
+  }
+}

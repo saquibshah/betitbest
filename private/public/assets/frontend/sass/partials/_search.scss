@@ -1,0 +1,202 @@
+@import 'compass/css3/transition';
+@import 'compass/css3/border-radius';
+@import 'compass/css3/box-shadow';
+@import 'compass/css3/box-sizing';
+@import 'base';
+
+@mixin search_results_common {
+  @include border-bottom-radius(3px);
+  @include box-shadow(0 0 5px rgba(0, 0, 0, .2));
+
+  background: $white;
+  border: 1px solid $grey-1;
+  border-top: 0;
+  box-sizing: border-box;
+  display: none;
+  overflow-y: scroll;
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  top: 40px;
+  width: 100%;
+  z-index: 9999;
+
+  ul {
+      display: block;
+      font-size: 1em;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: block;
+
+        a, span {
+          color: $left-nav-bg;
+          display: block;
+          padding: .5em 1em;
+          text-decoration: none;
+        }
+
+        a:hover {
+            background: $grey-2;
+        }
+
+        span {
+          border-bottom: 1px solid $grey-3;
+          color: $grey-4;
+          margin: 0 1em .5em;
+          padding: 1em 0 .5em;
+          text-transform: uppercase;
+        }
+      }
+  }
+}
+
+#search_container {
+    box-sizing: border-box;
+    float: right;
+    height: 40px;
+    margin-top: 10px;
+    position: relative;
+    width: 200px;
+    @include transition-property(all);
+    @include transition-duration(.5s);
+    @include transition-timing-function(ease-in-out);
+
+    &:after {
+        color: #a9706d;
+        content: '\f002';
+        display: block;
+        font-family: FontAwesome;
+        font-size: 18px;
+        line-height: 35px;
+        position: absolute;
+        right: 8px;
+        top: 0;
+    }
+
+    #search_input {
+        @include border-radius(3px);
+        @include box-shadow(0 0 0 rgba(0, 0, 0, 0));
+        @include box-sizing(border-box);
+
+        border: 1px solid $grey-1;
+        bottom: 0;
+        left: 0;
+        opacity: .6;
+        padding: 10px;
+        position: absolute;
+
+        right: 0;
+        top: 0;
+        width: 100%;
+
+        &:focus {
+            opacity: 1;
+            outline: none;
+        }
+    }
+
+    #search_results {
+      @include search_results_common;
+    }
+
+    &.open {
+        width: 620px;
+
+        #search_results {
+            display: block;
+        }
+
+        #search_input {
+            @include border-radius(0, 0);
+            @include border-top-radius(3px);
+        }
+    }
+}
+
+.head.searchOpen #sectionnav {
+    display: none;
+}
+
+//Mobile search
+#search_container_mobile {
+  display: none;
+  margin-left: 44px;
+
+  #search_input_mobile {
+    border-right: 0px;
+    border-left: 0px;
+    border-top: 0px;
+    margin-top: 0px;
+    height: 30px;
+    width: 60%;
+    background-color: transparent;
+  }
+}
+
+#mobile_search_toggle {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  #search_container {
+    display: none !important;
+  }
+
+  //Mobile search in responsive
+  #search_container_mobile {
+      width: 70%;
+
+      input[name="search_term"] {
+          @include border-radius(0);
+          font-size: 15px;
+          width: 100% !important;
+          border: 0;
+          border-bottom: 2px solid #eee;
+      }
+
+    #search_results_mobile {
+        @include search_results_common;
+        @include border-radius(0);
+        @include box-shadow(none);
+
+        border: 0;
+        position: fixed;
+        overflow-y: auto;
+        left: 0;
+        right: 0;
+        top: 80px;
+        z-index: 9999;
+        margin: 0;
+        bottom: 0;
+        padding-bottom: 2em;
+        max-height: initial !important;
+        font-size: 1.6em;
+
+        ul li:first-child {
+            margin-top: -15px;
+        }
+    }
+  }
+
+  #mobile_search_toggle {
+    display: block !important;
+    margin-top: 12px;
+    margin-left: 51px;
+    width: 6%;
+    font-size: 34px;
+
+    i {
+      line-height: 1em;
+      font-size: 0.9em;
+      color: #6F1111;
+    }
+  }
+
+  .lnk-store {
+    display: block;
+  }
+}

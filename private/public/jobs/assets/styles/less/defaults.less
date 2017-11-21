@@ -1,0 +1,84 @@
+// Default
+* {
+	box-sizing: border-box;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	overflow: visible;
+
+	li {
+		margin-left: 15px;
+	}
+}
+
+body {
+	font-size: 14px;
+	color: #000;
+	font-family: 'montserrat-regular';
+}
+
+h1 {
+	text-transform: uppercase;
+	color: #333;
+
+	.sub-heading {
+		// margin-left: 10px;
+		// color: @main-color;
+		// font-size: 16px;
+		font-family: 'montserrat-light';
+		color: @grey;
+	}
+}
+
+h2 {
+	color: @main-color;
+	font-size: 16px;
+	font-family: 'montserrat-light';
+	pading-top: 0;
+	text-transform: uppercase;
+}
+
+p {
+	width: 75%;
+}
+
+a {
+	color: @main-color;
+	text-decoration: none;
+	cursor: pointer;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+strong {
+	font-family: 'montserrat-light';
+	text-transform: uppercase;
+	color: @main-color;
+}
+
+// Clearfix
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } // IE6
+*:first-child+html .clearfix { zoom: 1; } // IE7
+// END: Clearfix
+
+.red {
+	color: @main-color;
+}
+
+.large {
+	font-size: 18px;
+}
+
+

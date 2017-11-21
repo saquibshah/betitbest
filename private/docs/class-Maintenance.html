@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Maintenance</title>
+
+	<link rel="stylesheet" href="resources/style.css?c2f33731c1948fbed7c333554678bfa68d4817da">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Packages</h3>
+			<ul>
+				<li>
+					<a href="package-BIBSN.html">
+						BIBSN<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-BIBSN.Controllers.html">
+						Controllers<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-BIBSN.Controllers.Backend.html">
+						Backend					</a>
+
+						</li>
+				<li>
+					<a href="package-BIBSN.Controllers.Cli.html">
+						Cli					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="package-BIBSN.Core.html">
+						Core					</a>
+
+						</li>
+				<li>
+					<a href="package-BIBSN.Libraries.html">
+						Libraries					</a>
+
+						</li>
+				<li>
+					<a href="package-BIBSN.Migrations.html">
+						Migrations					</a>
+
+						</li>
+				<li>
+					<a href="package-BIBSN.Models.html">
+						Models<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-BIBSN.Models.Backend.html">
+						Backend					</a>
+
+						</li>
+				<li>
+					<a href="package-BIBSN.Models.Cli.html">
+						Cli					</a>
+
+						</li>
+							</ul></li></ul></li>
+				<li>
+					<a href="package-None.html">
+						None					</a>
+
+						</li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-Maintenance.html">Maintenance</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+<span>Package</span>			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Maintenance</h1>
+
+
+	<div class="description">
+	<p>Class Maintenance</p>
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+CI_Controller
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>Maintenance</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		<b>Package:</b> <a href="package-BIBSN.html">BIBSN</a>\<a href="package-BIBSN.Controllers.html">Controllers</a>\<a href="package-BIBSN.Controllers.Cli.html">Cli</a><br>
+
+			<b>Located at</b> <a href="source-class-Maintenance.html#3-86" title="Go to source code">controllers/cli/maintenance.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Maintenance.html#27-34" title="Go to source code">__construct</a>( )</code>
+
+		<div class="description short">
+			<p>Maintenance constructor.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Maintenance constructor.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="acquireLock" id="_acquireLock">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_acquireLock">#</a>
+		<code><a href="source-class-Maintenance.html#36-48" title="Go to source code">acquireLock</a>( <span>string <var>$method</var></span> )</code>
+
+		<div class="description short">
+			<p>Acquires a lock to ensure that only one quote-reader is in use at one time.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Acquires a lock to ensure that only one quote-reader is in use at one time.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$method</var></dt>
+					<dd>The name of the method requesting the lock.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="releaseLock" id="_releaseLock">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_releaseLock">#</a>
+		<code><a href="source-class-Maintenance.html#50-56" title="Go to source code">releaseLock</a>( <span>string <var>$method</var></span> )</code>
+
+		<div class="description short">
+			<p>Releases a lock.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Releases a lock.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$method</var></dt>
+					<dd>The name of the method that requested the lock.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="updateTwitterFeeds" id="_updateTwitterFeeds">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_updateTwitterFeeds">#</a>
+		<code><a href="source-class-Maintenance.html#58-80" title="Go to source code">updateTwitterFeeds</a>( <span>boolean <var>$multipleIterations</var> = <span class="php-keyword1">false</span></span>, <span>integer <var>$maxIterations</var> = self::DEFAULT_MAX_ITERATIONS</span> )</code>
+
+		<div class="description short">
+			<p>Called from CLI to loop through all known Twitter accounts</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Called from CLI to loop through all known Twitter accounts</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$multipleIterations</var></dt>
+					<dd></dd>
+					<dt><var>$maxIterations</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="updateCategorization" id="_updateCategorization">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_updateCategorization">#</a>
+		<code><a href="source-class-Maintenance.html#82-85" title="Go to source code">updateCategorization</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+	<table class="summary constants" id="constants">
+	<caption>Constants summary</caption>
+	<tr data-order="DEFAULT_MAX_ITERATIONS" id="DEFAULT_MAX_ITERATIONS">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-Maintenance.html#11-14" title="Go to source code"><b>DEFAULT_MAX_ITERATIONS</b></a>
+			</code>
+
+			<div class="description short">
+				<p>Default maximum number of iterations</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Default maximum number of iterations</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#DEFAULT_MAX_ITERATIONS" class="anchor">#</a>
+				<code><span class="php-num">12</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="SLEEP_TIME" id="SLEEP_TIME">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-Maintenance.html#16-19" title="Go to source code"><b>SLEEP_TIME</b></a>
+			</code>
+
+			<div class="description short">
+				<p>Default time to sleep if we should do multipleIterations</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Default time to sleep if we should do multipleIterations</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#SLEEP_TIME" class="anchor">#</a>
+				<code><span class="php-num">5</span></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="currentIteration" id="$currentIteration">
+		<td class="attributes"><code>
+			protected  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Maintenance.html#21-25" title="Go to source code"><var>$currentIteration</var></a>
+
+			<div class="description short">
+				<p>Current number of iterations</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Current number of iterations</p>
+
+					<h4>Type</h4>
+					<div class="list">
+							int<br>
+					</div>
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$currentIteration" class="anchor">#</a>
+				<code><span class="php-num">1</span></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+	<table class="summary properties" id="magicProperties">
+	<caption>Magic properties summary</caption>
+	<tr data-order="Cli" id="m$Cli">
+		<td class="attributes"><code>
+			public  
+			<code><a href="class-Cli_model.html">Cli_model</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Maintenance.html#5" title="Go to source code"><var>$Cli</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Twitter" id="m$Twitter">
+		<td class="attributes"><code>
+			public  
+			<code><a href="class-Twitter_model.html">Twitter_model</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Maintenance.html#6" title="Go to source code"><var>$Twitter</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Categorization" id="m$Categorization">
+		<td class="attributes"><code>
+			public  
+			<code><a href="class-Categorization_model.html">Categorization_model</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Maintenance.html#7" title="Go to source code"><var>$Categorization</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

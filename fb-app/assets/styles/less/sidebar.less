@@ -1,0 +1,109 @@
+// Project: Facebook Landing Page
+// http://bibintern.betitbest.com/public/index.php?path_info=projects/facebook-landing-page-der-apps
+// Author: Lucas Hartman <lucas.hartman@betitbest.com>
+// Created on: 2015/07/16
+
+// Sidebar
+
+.sidebar {
+	background: @red-dark none repeat scroll 0 0;
+    bottom: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 200;
+    font-weight: 600;
+    
+    &.open {
+    	left: 0;    	
+    }
+
+    .sidebar-btn {
+    	display: relative;
+		display: block;
+	    float: left;
+	    height: 5em;
+	    width: 100%;
+	    z-index: 300;
+
+	    strong {
+	    	color: #fff;
+		    display: block;
+		    font-size: 1.08em;
+		    font-weight: 600;
+		    line-height: 5em;
+		    text-align: center;
+		    text-transform: uppercase;
+		    float: left;
+		    height: 5em;
+	    	width: 5em;
+	    }
+	}
+
+    .sidebar-title {
+    	opacity: 0;
+    	width: 100%;
+    	text-transform: uppercase;
+	    float: left;
+	    font-size: 1.25em;
+	    line-height: 4.304em;
+	    padding-left: 1.25em;
+	    margin-top: -4em;
+	    background: #fff;
+	    //.transition(@sildeout, ease-out);color: @red !important;
+	    
+	    &.active {
+			margin-top: 0;    		
+    		opacity: 1;
+	    }
+    }
+
+    .sidebar-navigation {
+		margin: 0;
+		padding: 60px 0 0;
+		//.transition(@sildeout, ease-out);color: @red !important;
+
+		li {
+			clear: both;
+			display: block;
+		}
+
+		a {
+			display: block;
+		    font-size: 1em;
+		    height: 5.38em;
+		    width: 23.33em;
+
+		    &:hover {
+		    	background: @red;
+		    }
+		}
+
+		.icon {
+			display: block;
+		    float: left;
+		    height: 5.38em;
+		    text-align: center;
+		    width: 5.38em;
+		}
+
+		.description {
+			color: #fff;
+		    display: block;
+		    float: left;
+		    font-size: 1.25em;
+		    line-height: 4.304em;
+		    padding-left: 1.25em;
+		}
+
+		img {
+			box-sizing: border-box;
+		    color: #fff;
+		    display: block;
+		    height: 2.8em;
+		    line-height: 1.75em;
+		    margin: 1.25em auto 0.5em;
+		    width: 2.8em;
+		}
+	}
+}

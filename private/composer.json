@@ -1,0 +1,19 @@
+{
+  "name": "bib-sportnachrichten",
+  "description": "Sportnachrichtenportal von Bet IT Best",
+  "require": {
+    "abraham/twitteroauth": "^0.5.3"
+  },
+  "license": "Copyright Bet IT Best",
+  "authors": [
+    {
+      "name": "Nicolas Mayr",
+      "email": "nicolas.mayr@betitbest.com"
+    },
+    {
+      "name": "Saquib Shah",
+      "email": "saquib.shah@betitbest.com"
+    },
+    
+  ]
+}

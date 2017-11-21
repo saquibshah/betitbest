@@ -1,0 +1,191 @@
+#livescore-type-tenis
+{
+    .team-type1-info
+    {
+        width : 100%;
+        border-left   : $border-livescore;
+        border-bottom : $border-livescore;
+        border-right  : $border-livescore;
+        height        : 60px;
+        img
+        {
+            height : 40px;
+            margin : 5px;
+            width  : 40px;
+        }
+        > div {
+            height      : 60px;
+            line-height : 60px;
+        }
+    }
+    .team-type1-tourname
+    {
+        width : 100%;
+        height       : 30px;
+        line-height  : 30px;
+        font-weight  : bold;
+        text-align   : center;
+        border-left  : $border-livescore;
+        border-right : $border-livescore;
+        border-top   : $border-livescore;
+    }
+    @media (max-width : 560px) {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+    div.match-item-m{
+        &.odd {
+            background-color : #f3f3f3;
+        }
+        @media (max-width : 560px) {
+            font-size: 11px;
+        }
+    }
+    a.live_link {
+        text-decoration : none;
+        color           : #000;
+    }
+    .tourname 
+    {
+        background-color : #D8D6D6;
+        height           : 40px;
+        @extend .team-type1-tourname;
+
+        a {
+            line-height : 40px;
+        }
+    }
+    .match-date {
+        width : 100%;
+        @extend .team-type1-tourname;
+    }
+    div.header-info {
+        height        : 30px;
+        width         : 100%;
+        border: $border-livescore;
+
+        > div {
+            height      : 30px;
+            line-height : 30px;
+        }
+
+        div.large-left:nth-child(1) > span {
+            top : 5px;
+        }
+    }
+    div.team1-info
+    {
+        border-bottom: none;
+        @extend .team-type1-info;
+        @media (max-width : 560px) {
+            height: 40px;
+            img {
+                height : 30px;
+                margin : 5px;
+                width  : 30px;
+                &:nth-child(2)
+                    {
+                    margin-top: 10px !important;
+                }
+            }
+            > div {
+                height      : 40px;
+                line-height : 40px;
+                &.large-left:nth-child(3)
+                    {
+                    img
+                    {
+                        margin-top: 10px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    div.team2-info {
+        @extend .team-type1-info;
+        @media (max-width : 560px) {
+            height: 40px;
+            img {
+                height : 30px;
+                margin : 5px;
+                width  : 30px;
+            }
+
+            > div {
+                height      : 40px;
+                line-height : 40px;
+                &.large-left:nth-child(3)
+                    {
+                    img
+                    {
+                        margin-top: 10px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    div.large-left {
+        float       : left;
+        text-indent : 10px;
+        font-weight : bold;
+        span
+        {
+            img
+            {
+                top: -6px !important;
+            }
+        }
+        @media (max-width : 800px) {
+            &:nth-child(2) {
+                width    : 150px;
+                padding  : 0px 5px;
+                height   : 60px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+        @media (max-width : 560px) {
+            text-indent : 0px;
+            &:nth-child(2) {
+                height   : 40px;
+                width: 90px;
+            }
+            span 
+            { 
+                img
+                {
+                    top: -7px !important;
+                }
+            }
+        }
+    }
+    div.small-right {
+        float       : right;
+        width       : 30px;
+        text-align  : center;
+        border-left : 1px solid #e3e3e3;
+        @media (max-width : 560px) {
+            font-size : 11px;
+            width : 15px;
+        }
+    }
+
+    a.tournament_filter
+    {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        &:hover
+            {
+            color       : #8e1510 !important;
+            font-weight : bold;
+        }
+        @media (max-width : 560px) {
+            font-size: 12px;
+            display: block;
+        }
+    }
+}

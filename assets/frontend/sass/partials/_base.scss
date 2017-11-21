@@ -1,0 +1,83 @@
+$eee: #eee;
+
+$line-height: 1.4 !default;
+$font-color: #2a2a2a !default;
+
+$link-color: #00e !default;
+$link-hover-color: #06e !default;
+$link-visited-color: #551a8b !default;
+
+$selected-font-color: #fff !default;
+$selected-background-color: #ff5e99 !default;
+
+$invalid-background-color: #f0dddd !default;
+
+$table-hover-grey: #e3e3e3;
+
+$almost-white: #f5f5f5;
+$light-grey: #464646;
+$mid-grey: #363636;
+$table-border-grey: #e3e3e3;
+
+$dark-red-bg: #6f1111;
+
+$left-nav-bg: #6f1111;
+$left-nav-hover-bg: #8c1515;
+$left-nav-badge-bg: #65130f;
+
+$ticket-width: 23em;
+$sidebar-width: 5.38em;
+$sidebar-open-width: 23.33em;
+
+$max-width: 1060px;
+
+$dark-grey-bg: #262626;
+$ticket-bg: #262626;
+$ticket-head-bg: #363636;
+$ticket-text-inactive: #424242;
+$ticket-item-bg: #6f1111;
+$ticket-item-open-bg: #6f1111;
+
+$black: #000;
+$white: #fff;
+$grey-1: #aaa;
+$grey-2: #eee;
+$grey-3: #ccc;
+$grey-4: #222;
+$grey-5: #444;
+$grey-6: #ddd;
+
+$dark-grey: #262626;
+$lightest-grey: #e3e3e3;
+$dark-red: #6f1111;
+
+$default-text-shadow-color: rgba($black, 1);
+$default-text-shadow-blur: 15px;
+$default-text-shadow-v-offset: 0;
+$default-text-shadow-spread: 9px;
+
+@mixin breakpoint($point) {
+    @if $point == max {
+        @media (max-width: 1506px) {
+            @content;
+        }
+    } @else if $point == medium {
+        @media (max-width: 1250px) {
+            @content;
+        }
+    } @else if $point == min {
+        @media (max-width: 650px) {
+            @content;
+        }
+    }
+}
+
+@mixin font-smoothing($value: on) {
+    @if $value == on {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    } @else {
+        -webkit-font-smoothing: subpixel-antialiased;
+        -moz-osx-font-smoothing: auto;
+    }
+}

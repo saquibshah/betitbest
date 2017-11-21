@@ -1,0 +1,246 @@
+/* jQuery Bracket | Copyright (c) Teijo Laine 2011-2015 | Licenced under the MIT licence */
+.bracket{
+	position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100vw !important;
+}
+div.jQBracket {
+    font-family: Arial;
+    font-size: 14px;
+    position: relative
+}
+div.jQBracket .tools {
+    position: absolute;
+    top: 0;
+    color: #FFF
+}
+div.jQBracket .tools span {
+    cursor: pointer;
+    margin: 5px;
+    display: block;
+    text-align: center;
+    width: 18px;
+    height: 18px;
+    background-color: #666
+}
+div.jQBracket .tools span:hover {
+    background-color: #999 !important;
+}
+div.jQBracket .finals {
+    float: right;
+    right: 0;
+    clear: right;
+    position: relative
+}
+div.jQBracket .bracket {
+    float: right;
+    clear: left
+}
+div.jQBracket .loserBracket {
+    float: right;
+    clear: left;
+    position: relative
+}
+div.jQBracket .round {
+    position: relative;
+    width: 100px;
+    margin-right: 40px;
+    margin-left: 35px;
+    float: left;
+}
+div.jQBracket .match {
+    position: relative
+}
+div.jQBracket .editable {
+    cursor: pointer
+}
+div.jQBracket .team {
+    position: relative;
+    z-index: 1;
+    float: left; 
+    width: 135px;
+    cursor: default
+    border-radius: 50px;
+}
+.team{
+	border-radius: 50px;
+	background-color: #6f1111;
+	color: #fff !important;
+	cursor: pointer;
+}
+.connector{
+	border-color: black;
+}
+.score{
+	color: white !important;
+}
+img{
+	height: 10px;
+	margin-left: 2.5px;
+}
+div.jQBracket .team:first-child {
+    border-bottom: 1px solid #999
+}
+div.jQBracket .team input {
+    font-size: 12px;
+    padding: 0;
+    width: inherit;
+    border: 0;
+    margin: 0
+}
+div.jQBracket .team div.label {
+    padding: 3px;
+    position: absolute;
+    width: 100px;
+    height: 22px;
+    white-space: nowrap;
+    overflow: hidden
+}
+div.jQBracket .team div.label[disabled] {
+    cursor: default
+}
+div.jQBracket .team div.score {
+    float: right;
+    padding: 3px;
+    background-color: rgba(255, 255, 255, .3);
+    text-align: center;
+    font-weight: bold;
+    width: 20px
+}
+div.jQBracket .team div.score[disabled] {
+    color: #999;
+    cursor: default
+}
+div.jQBracket .team.win div.score {
+    color: #00c200
+}
+div.jQBracket .team.lose div.score {
+    color: #f00
+}
+div.jQBracket .team.tie div.score {
+    color: #00F
+}
+div.jQBracket .team.highlightLoser .bubble {
+ 	display: none; 
+}
+div.jQBracket .team.highlight {
+    background-color: #3C0;
+    color: #000
+}
+div.jQBracket .connector.highlight {
+    border-color: #3C0;
+    color: #000
+}
+div.jQBracket .connector.highlight .connector{
+    border-color: #3C0;
+    color: #000
+}
+div.jQBracket .teamContainer {
+    z-index: 1;
+    position: relative;
+    float: left
+}
+div.jQBracket .connector {
+    border: 2px solid black;
+    border-left-style: none;
+    position: absolute;
+    z-index: 1
+}
+div.jQBracket .connector div.connector {
+    border: 0;
+    border-bottom: 2px solid #666;
+    height: 0;
+    position: absolute
+}
+div.jQBracket .bubble {
+    height: 22px;
+    line-height: 22px;
+    width: 30px;
+    right: -35px;
+    position: absolute;
+    text-align: center;
+    font-size: 11px
+}
+div.jQBracket .bubble:after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid transparent
+}
+div.jQBracket .bubble:after {
+    left: -5px;
+    border-left: 0
+}
+div.jQBracket .highlightWinner .bubble {
+    background-color: #DA0;
+    color: #960
+}
+div.jQBracket .highlightWinner .bubble:after {
+    display: none;
+}
+div.jQBracket.rl .finals {
+    float: left;
+    left: 0;
+    clear: left
+}
+div.jQBracket.rl .bracket {
+    float: left;
+    clear: right
+}
+div.jQBracket.rl .loserBracket {
+    float: left;
+    clear: right
+}
+div.jQBracket.rl .round {
+    margin-right: 0;
+    margin-left: 40px;
+    float: right
+}
+div.jQBracket.rl .team {
+    float: right
+}
+div.jQBracket.rl .team div.label {
+    right: 0
+}
+div.jQBracket.rl .team div.score {
+    float: left
+}
+div.jQBracket.rl .teamContainer {
+    float: right
+}
+div.jQBracket.rl .connector {
+    border-left-style: solid;
+    border-right-style: none;
+    border-width: 2px
+}
+div.jQBracket.rl .bubble {
+    left: -35px
+}
+div.jQBracket.rl .bubble.third {
+    background-color: #963;
+    color: #310
+}
+div.jQBracket.rl .bubble.fourth {
+    background-color: #678;
+    color: #CCD
+}
+div.jQBracket.rl .bubble:after {
+    left: auto;
+    right: -5px;
+    border-left: 5px solid transparent;
+    border-right: 0
+}
+div.jQBracket.rl .bubble.third:after {
+    border-right: 0;
+    border-left: 6px solid #963
+}
+div.jQBracket.rl .bubble.fourth:after {
+    border-right: 0;
+    border-left: 6px solid #678
+}
