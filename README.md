@@ -1,1 +1,1 @@
-# betitbest
+# betitbest news portal
