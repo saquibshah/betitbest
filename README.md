@@ -1,1 +1,1 @@
-# betitbest news portal
+# A sports news portal
